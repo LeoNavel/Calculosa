@@ -1,10 +1,6 @@
 # Calculosa
-♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥
-Da best calculator for ya and for yo friends
-Enjoy with pleasure 
-Use wisely 
-Love kittens and cats 
-♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ 
+Simple calculator by VUT students
+IVS motivation
 
 ## Contributors
 * Filip Conka filip@conka.pro
