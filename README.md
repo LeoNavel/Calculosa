@@ -2,7 +2,7 @@
 Da best calculator for ya
 
 ## Contributors
-Filip Conka filip@conka.pro
-Filip Klembara leo@navel.pro
-Michal Bohus zololol3@gmail.com
-Lucia Tusimova lucka.tusimova@gmail.com
+* Filip Conka filip@conka.pro
+* Filip Klembara leo@navel.pro
+* Michal Bohus zololol3@gmail.com
+* Lucia Tusimova lucka.tusimova@gmail.com
