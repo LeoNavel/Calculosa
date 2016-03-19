@@ -13,7 +13,7 @@ IVS motivation
 _Note: Homebrew required_
 ```
 $ brew install nodejs
-$ npm install -g electron electron-packager electron-builder
+$ npm install -g electron-prebuilt electron-packager electron-builder
 $ npm install
 ```
 Then you can run the application
@@ -23,7 +23,7 @@ $ electron .
 ### Windows
 Install NodeJS and add it to path.
 ```
-> npm install -g electron electron-packager electron-builder
+> npm install -g electron-prebuilt electron-packager electron-builder
 > npm install
 > npm start
 ```
