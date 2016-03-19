@@ -1,5 +1,10 @@
 # Calculosa
-Da best calculator for ya
+♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥
+Da best calculator for ya and for yo friends
+Enjoy with pleasure 
+Use wisely 
+Love kittens and cats 
+♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ ♥ 
 
 ## Contributors
 * Filip Conka filip@conka.pro
