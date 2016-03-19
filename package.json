@@ -1,0 +1,16 @@
+{
+  "name": "Calculosa",
+  "version": "0.0.1",
+  "main": "js/main.js",
+  "description": "Calculosa calculator capp",
+  "license": "GPL-3.0",
+  "private": "yes",
+  "main": "js/main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "author": "Calculosa Team",
+  "devDependencies": {
+    "electron-prebuilt": "^0.36.0"
+  }
+}
