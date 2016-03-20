@@ -1,0 +1,26 @@
+{
+  "name": "Calculosa",
+  "version": "0.0.1",
+  "main": "js/main.js",
+  "description": "Calculosa calculator capp",
+  "license": "GPL-3.0",
+  "private": "yes",
+  "author": "Calculosa Team <leo@navel.pro>",
+  "contributors": [
+    "Michal Bohus <zololol3@gmail.com>",
+    "Filip Conka <filip@conka.pro>",
+    "Filip Klembara <leo@navel.pro>",
+    "Lucia Tusimova <lucka.tusimova@gmail.com>"
+  ],
+  "dependencies": {
+    "electron-prebuilt": "^0.36.0"
+  },
+  "build": {
+    "app-bundle-id": "calculosa",
+    "app-category-type": "productivity"
+  },
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "bower-installer": "^1.2.0"
+  }
+}

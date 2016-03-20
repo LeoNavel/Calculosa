@@ -1,0 +1,30 @@
+{
+  "name": "Calculosa",
+  "description": "Calculosa calculator capp",
+  "main": "js/main.js",
+  "authors": [
+    "Calculosa Team"
+  ],
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/LeoNavel/Calculosa",
+  "moduleType": [
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "install": {
+    "path": {
+      "js": "js/",
+      "css": "css/"
+    }
+  },
+  "dependencies": {
+    "jquery": "^2.2.2"
+  }
+}

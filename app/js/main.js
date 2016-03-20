@@ -1,12 +1,19 @@
 'use strict';
 
 const electron = require('electron');
+const win32_squirrel = require('./win32_squirrel.js');
 const app = electron.app;  // Module to control application life.
 const BrowserWindow = electron.BrowserWindow;  // Module to create native browser window.
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 var mainWindow = null;
+
+var handleStartupEvent = win32_squirrel.handleStartupEvent;
+
+if (handleStartupEvent()) {
+    return;
+}
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function() {
