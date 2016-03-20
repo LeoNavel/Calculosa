@@ -1,0 +1,19 @@
+===CALCULOSA==
+xklemb00
+xtusim00
+xconka00
+xbohus01
+==============
+
+Na dohodnutie terminov stretnuti pouzivame needToMeet, planovanie prace ulahcuje trello, ako komunikacny prostriedok sme zvolili slack
+System pre spravu verzii sme zvolili Git a server pre git je GitHub 
+
+29.03.-05.04. tvorba testov(xconka00), graficky navrh(xtusim00)
+05.04.-12.04. mathlib(xbohus01), GUI(xklemb00), tvorba grafickej identity(xtusim00)
+12.04.-15.04. implementacia(xbohus01, xklemb00), makefile(xconka00)
+===15.04.===  ALPHA
+15.04.-19.04. Testovanie a vyhodnotenie
+19.04.-23.04. dokumentacia(xtusim00), instalator(xconka00)
+===23.04.===  BETA
+23.04.-25.4. Testovanie a vyhodnotenie
+
