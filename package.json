@@ -5,12 +5,26 @@
   "description": "Calculosa calculator capp",
   "license": "GPL-3.0",
   "private": "yes",
-  "main": "js/main.js",
   "scripts": {
-    "start": "electron main.js"
+    "postinstall": "install-app-deps",
+    "package": "electron-packager app --all --out=packages --overwrite",
+    "dist": "build --platform all",
+    "start": "electron app"
   },
-  "author": "Calculosa Team",
+  "contributors": [
+    "Michal Bohus <zololol3@gmail.com>",
+    "Filip Conka <filip@conka.pro>",
+    "Filip Klembara <leo@navel.pro>",
+    "Lucia Tusimova <lucka.tusimova@gmail.com>"
+  ],
   "devDependencies": {
+    "bower": "^1.7.7",
+    "electron-builder": "^2.11.0",
+    "electron-packager": "^5.2.1",
     "electron-prebuilt": "^0.36.0"
+  },
+  "build": {
+    "app-bundle-id": "calculosa",
+    "app-category-type": "productivity"
   }
 }
