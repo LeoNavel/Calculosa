@@ -1,5 +1,6 @@
 #!/bin/sh
 
+mkdir -p dist packages
 npm install
 cd app
 npm install
