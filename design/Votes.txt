@@ -1,0 +1,23 @@
+Please vote for mockups you like. Feel free to vote for more than one. 
+Write names of mockups you like under your name in this file as example below. 
+
+-As commit message write "[votes] \(name)". 
+-You have time till 22:00 monday 4.4.2016. 
+
+Let Votes begin.
+
+%%%%%  EXAMPLE  %%%%%
+Mr. Calculosa
+1, 2, 3, 4, 5, 7
+
+git commit -m "[votes] Calculosa"
+%%%%%%%%%%%%%%%%%%%%%
+
+Fiťo
+
+
+Tuška
+
+
+Mišo
+
