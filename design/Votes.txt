@@ -8,7 +8,7 @@ Let Votes begin.
 
 %%%%%  EXAMPLE  %%%%%
 Mr. Calculosa
-1, 2, 3, 4, 5, 7
+1, 2, 3, 4, 5, 6, 7
 
 git commit -m "[votes] Calculosa"
 %%%%%%%%%%%%%%%%%%%%%
@@ -17,7 +17,7 @@ Fiťo
 
 
 Tuška
-
+1, 2
 
 Mišo
 
