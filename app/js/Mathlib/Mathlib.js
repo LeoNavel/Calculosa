@@ -1,5 +1,9 @@
 /**Math library for our calculator**/
 
+/**
+ * @brief Mathlib class, requires numbers in float for methods except factorial
+ */
+
 /** @brief Addition
  *
  *  Adds b to a
