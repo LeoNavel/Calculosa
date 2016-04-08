@@ -172,7 +172,7 @@ describe('Mathlib', function () {
             Mathlib.factorial(-10).should.be.NaN();
         });
         it('should return 3628800 for factorial of 10', function () {
-            Mathlib.factorial(10, 2).should.equal(3628800);
+            Mathlib.factorial(10).should.equal(3628800);
         });
     });
 });
