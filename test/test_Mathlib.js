@@ -57,8 +57,8 @@ describe('Mathlib', function () {
         it('should return 571785431872 when subtracting 21398327312 from 593183759184', function () {
             Mathlib.subtraction(593183759184, 21398327312).should.equal(571785431872);
         });
-        it('should return 11.41 when subtracting 4 from -7.41', function () {
-            Mathlib.subtraction(-7.41, 4).should.equal(11.41);
+        it('should return -11.41 when subtracting 4 from -7.41', function () {
+            Mathlib.subtraction(-7.41, 4).should.equal(-11.41);
         });
         it('should return 1.48923023094 when subtracting 2.475938120 from 3.96516835094', function () {
             Mathlib.subtraction(3.96516835094, 2.475938120).should.equal(1.48923023094);
