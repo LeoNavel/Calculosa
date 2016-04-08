@@ -68,8 +68,8 @@ describe('Mathlib', function () {
         it('should return 40 when 5 times 8', function () {
             Mathlib.multiplication(5, 8).should.equal(40);
         });
-        it('should return 50 when -250 times -5', function () {
-            Mathlib.multiplication(-250, -5).should.equal(50);
+        it('should return 1250 when -250 times -5', function () {
+            Mathlib.multiplication(-250, -5).should.equal(1250);
         });
         it('should return 571785431872 when 2 times 285892715936', function () {
             Mathlib.multiplication(2, 285892715936).should.equal(571785431872);
@@ -119,6 +119,9 @@ describe('Mathlib', function () {
         });
         it('should return 0.25 for 0.5 power to 2', function () {
             Mathlib.power(0.5, 2).should.equal(0.25);
+        });
+        it('should return 0.0625 for 2 power to -4', function () {
+            Mathlib.power(2, -4).should.equal(0.0625);
         });
         it('should be NaN when adding non-numerical arguments', function () {
             Mathlib.power('a', 'b').should.be.NaN();
