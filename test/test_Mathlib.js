@@ -3,15 +3,22 @@
  * @type {should|exports|module.exports}
  */
 var should = require('should');
+
 /**
  * Including local modul with Mathlib
  * @type {exports|module.exports}
  */
 var Mathlib = require('../app/js/Mathlib/Mathlib.js');
-/** @brief Class for creating automated testing.
+
+/**
+ * @brief Class for creating automated testing.
  */
 describe('Mathlib', function () {
-    // test of adition
+    /**
+     * Tests for addition method of Mathlib.
+     *
+     * Should function like regular mathematic addition.
+     */
     describe('addition()', function () {
         it('should return 8 when adding 5 to 3', function () {
             Mathlib.addition(5, 3).should.equal(8);
@@ -31,13 +38,12 @@ describe('Mathlib', function () {
         it('should return 3.96516835094 when adding 2.475938120 to 1.48923023094', function () {
             Mathlib.addition(2.475938120, 1.48923023094).should.equal(3.96516835094);
         });
-        it('should be NaN when adding non-numerical arguments', function () {
-            Mathlib.addition('a', 'b').should.be.NaN();
-            Mathlib.addition(Mathlib, 'b').should.be.NaN();
-            Mathlib.addition(false, true).should.be.NaN();
-        })
     });
-    // test of substraction
+    /**
+     * Tests for subtraction method of Mathlib.
+     *
+     * Should function like regular mathematic subtraction.
+     */
     describe('subtraction()', function () {
         it('should return 3 when subtracting 5 from 8', function () {
             Mathlib.subtraction(8, 5).should.equal(3);
@@ -57,13 +63,12 @@ describe('Mathlib', function () {
         it('should return 1.48923023094 when subtracting 2.475938120 from 3.96516835094', function () {
             Mathlib.subtraction(3.96516835094, 2.475938120).should.equal(1.48923023094);
         });
-        it('should be NaN when subtracting non-numerical arguments', function () {
-            Mathlib.subtraction('a', 'b').should.be.NaN();
-            Mathlib.subtraction(Mathlib, 'b').should.be.NaN();
-            Mathlib.subtraction(false, true).should.be.NaN();
-        });
     });
-    // test of multiplication
+    /**
+     * Tests for multiplication method of Mathlib.
+     *
+     * Should function like regular mathematic multiplication.
+     */
     describe('multiplication()', function () {
         it('should return 40 when 5 times 8', function () {
             Mathlib.multiplication(5, 8).should.equal(40);
@@ -77,13 +82,13 @@ describe('Mathlib', function () {
         it('should return 42.42 when 21.21 times 2', function () {
             Mathlib.multiplication(21.21, 2).should.equal(42.42);
         });
-        it('should be NaN when multiplicating non-numerical arguments', function () {
-            Mathlib.multiplication('a', 'b').should.be.NaN();
-            Mathlib.multiplication(Mathlib, 'b').should.be.NaN();
-            Mathlib.multiplication(false, true).should.be.NaN();
-        });
     });
-    // test of counting logarithm
+    /**
+     * Tests for logarithm method of Mathlib.
+     *
+     * Should function like regular mathematic logarithm.
+     * Testing also irregular floating point results.
+     */
     describe('logarithm()', function () {
         it('should return NaN for negative argument', function () {
             Mathlib.logarithm(-10).should.be.NaN();
@@ -96,13 +101,13 @@ describe('Mathlib', function () {
         it('should return ~1 for input 2.71828182', function () {
             Mathlib.logarithm(2.71828182).should.be.approximately(1, 0.00000001);
         });
-        it('should be NaN when logarithming non-numerical arguments', function () {
-            Mathlib.logarithm('a').should.be.NaN();
-            Mathlib.logarithm(Mathlib).should.be.NaN();
-            Mathlib.logarithm(false).should.be.NaN();
-        })
     });
-    // test of power method
+    /**
+     * Tests for power method of Mathlib.
+     *
+     * Should function like regular mathematic power.
+     * Testing also negative exponents.
+     */
     describe('power()', function () {
         it('should return 0 for powers of 0', function () {
             Mathlib.power(0, 10).should.equal(0);
@@ -123,13 +128,12 @@ describe('Mathlib', function () {
         it('should return 0.0625 for 2 power to -4', function () {
             Mathlib.power(2, -4).should.equal(0.0625);
         });
-        it('should be NaN when adding non-numerical arguments', function () {
-            Mathlib.power('a', 'b').should.be.NaN();
-            Mathlib.power(Mathlib, 'b').should.be.NaN();
-            Mathlib.power(false, true).should.be.NaN();
-        })
     });
-    // test of division
+    /**
+     * Tests for division method of Mathlib.
+     *
+     * Should function like regular mathematic division.
+     */
     describe('division()', function () {
         it('should return 0 for division of 0', function () {
             Mathlib.division(0, 10).should.equal(0);
@@ -147,18 +151,15 @@ describe('Mathlib', function () {
         it('should return -0.25 for 0.5 divided by -2', function () {
             Mathlib.division(0.5, -2).should.equal(-0.25);
         });
-        it('should be NaN when adding non-numerical arguments', function () {
-            Mathlib.division('a', 'b').should.be.NaN();
-            Mathlib.division(Mathlib, 'b').should.be.NaN();
-            Mathlib.division(false, true).should.be.NaN();
-        })
     });
-    // test of counting factorial
+    /**
+     * Tests for factorial method of Mathlib.
+     *
+     * Should function like regular mathematic factorial.
+     * Testing also negative argument.
+     */
     describe('factorial()', function () {
         it('should return 1 for factorial of 0', function () {
-            Mathlib.factorial(0).should.equal(1);
-        });
-        it('should return NaN for non integer argument', function () {
             Mathlib.factorial(0).should.equal(1);
         });
         it('should return NaN for negative argument', function () {
@@ -166,16 +167,12 @@ describe('Mathlib', function () {
             Mathlib.factorial(-10).should.be.NaN();
             Mathlib.factorial(-1).should.be.NaN();
         });
+        it('should return NaN for non natural argument', function () {
+            Mathlib.factorial(1.05).should.be.NaN();
+            Mathlib.factorial(-10).should.be.NaN();
+        });
         it('should return 3628800 for factorial of 10', function () {
             Mathlib.factorial(10, 2).should.equal(3628800);
         });
-        it('should return -0.25 for 0.5 divided by -2', function () {
-            Mathlib.factorial(0.5, -2).should.equal(-0.25);
-        });
-        it('should be NaN when tring to factorial non-numerical arguments', function () {
-            Mathlib.factorial('a').should.be.NaN();
-            Mathlib.factorial(Mathlib).should.be.NaN();
-            Mathlib.factorial(false).should.be.NaN();
-        })
     });
 });
