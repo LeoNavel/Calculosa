@@ -1,0 +1,220 @@
+
+#main{
+    width: 1024px;
+    height: 768px;
+    opacity: 1;
+    margin: 0 auto;
+    background-color: rgba(37, 40, 69, 1);
+    border-width: 1px;
+    padding: 0;
+    overflow: visible;
+    position: relative;
+
+}
+
+#output{
+    width: 745px;
+    height: 62px;
+    left: 140px;
+    top: 76px;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(13, 7, 13, 1);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    overflow: hidden;
+    background: rgba(247, 247, 247, 1);
+    font-size: 19px;
+    color: #515151;
+    line-height: 62px;
+
+}
+
+#_3{
+    width: 318px;
+    height: 263px;
+    left: 540px;
+    top: 383px;
+    opacity: 1;
+    margin: 0;
+    border-width: 1px;
+    overflow: hidden;
+    line-height: 263px;
+    font-size: 261px;
+    font-style: normal;
+    text-align: center;
+    color: rgba(247, 247, 247, 1);
+
+}
+
+#_4{
+    left: 444px;
+    top: 216px;
+
+}
+
+#_5{
+    left: 351px;
+    top: 216px;
+}
+
+#_6{
+    left: 258px;
+    top: 216px;
+
+}
+
+#_7{
+
+    left: 165px;
+    top: 216px;
+
+}
+
+#_8{
+
+    left: 351px;
+    top: 376px;
+
+}
+
+#_9{
+
+    left: 444px;
+    top: 296px;
+
+
+}
+
+#_10{
+    left: 258px;
+    top: 376px;
+    opacity: 1;
+
+}
+
+#_11{
+    left: 351px;
+    top: 296px;
+}
+
+#_12{
+
+    left: 444px;
+    top: 469px;
+
+}
+
+#_13{
+
+    left: 258px;
+    top: 296px;
+
+}
+
+#_14{
+
+    left: 165px;
+    top: 296px;
+
+}
+
+#_15{
+
+    left: 165px;
+    top: 376px;
+
+}
+
+#_16{
+
+    left: 351px;
+    top: 469px;
+
+
+}
+
+#_17{
+
+    left: 258px;
+    top: 469px;
+
+}
+
+#_18{
+
+    left: 165px;
+    top: 469px;
+
+}
+
+#_19{
+
+    height: 130px;
+    left: 444px;
+    top: 549px;
+
+
+}
+
+#_20{
+
+    left: 351px;
+    top: 629px;
+
+}
+
+#_21{
+
+    left: 258px;
+    top: 629px;
+
+
+}
+
+#_22{
+
+    left: 165px;
+    top: 629px;
+
+}
+
+#_23{
+
+    left: 351px;
+    top: 549px;
+
+}
+
+#_24{
+
+    left: 258px;
+    top: 549px;
+
+}
+
+#_25{
+
+    left: 165px;
+    top: 549px;
+
+
+}
+
+#_26{
+    width: 256px;
+    height: 153px;
+    left: 602px;
+    top: 216px;
+    opacity: 1;
+    margin: 0;
+    border-width: 1px;
+    overflow: hidden;
+    line-height: 153px;
+    font-size: 151px;
+    font-style: normal;
+    text-align: center;
+    color: rgba(247, 247, 247, 1);
+
+}
