@@ -1,7 +1,10 @@
 /**Math library for our calculator**/
 
 /**
+ * @file Mathlib.js
+ *
  * @brief Mathlib class, requires numbers in float for methods except factorial
+ * @author Michal
  */
 
 /** @brief Addition
@@ -10,7 +13,7 @@
  *
  *	@param [in] a number
  *	@param [in] b number
- *	@return a+b
+ *	@return adition of a+b
  */
 exports.addition = function(a,b){
 return a+b;
@@ -22,7 +25,7 @@ return a+b;
  *
  *	@param [in] a number
  *	@param [in] b number
- *	@return a-b
+ *	@return subtraction of a-b
  */
 exports.subtraction = function(a,b){
 return a-b;
@@ -34,7 +37,7 @@ return a-b;
  *
  *	@param [in] a number
  *	@param [in] b number
- *	@return a*b
+ *	@return multiplication of a*b
  */
 exports.multiplication = function(a,b){
 return a*b;
@@ -45,7 +48,7 @@ return a*b;
  *  Calculate logarithm from a
  *
  *	@param [in] a number
- *	@return sum
+ *	@return logarithm of a
  */
 exports.logarithm = function(a){
     var n=150;
@@ -77,7 +80,7 @@ exports.logarithm = function(a){
  *
  *	@param [in] a number
  *	@param [in] b number
- *	@return c
+ *	@return b-th power of a
  */
 exports.power = function(a,b){
     var i= 0, c= 1, sign= b;
@@ -100,7 +103,7 @@ return c;
  *
  *	@param [in] a number
  *	@param [in] b number
- *	@return c
+ *	@return division of a by b
  */
 exports.division = function(a,b){
     var c;
@@ -117,7 +120,7 @@ exports.division = function(a,b){
  *  Calculate factorial
  *
  *	@param [in] a number
- *	@return c
+ *	@return factorial of a
  */
 exports.factorial = function(a){
     var c=1;
@@ -133,3 +136,4 @@ exports.factorial = function(a){
     }
     return c;
 };
+/*** End of file Mathlib.js ***/
