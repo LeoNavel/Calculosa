@@ -11,14 +11,14 @@
 
 }
 
-#output{
+#screen{
     width: 745px;
     height: 62px;
     left:90px;
     top: 76px;
     opacity: 1;
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
     border: 1px solid rgba(13, 7, 13, 1);
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -47,61 +47,6 @@
 
 }
 
-#btnDiv{
-
-}
-
-#btnMul{
-}
-
-#btnAdd{
-}
-
-#btnSub{
-}
-
-#btnComma{
-}
-
-#btnSign{
-
-}
-
-#btnCA{
-}
-
-#btnSolve{
-}
-
-#btnHelp{
-
-
-}
-
-#btnPower{
-
-
-}
-
-#btnLog{
-
-}
-
-#btnDel{
-}
-
-#btn3{
-
-
-}
-
-#btn2{
-
-}
-
-#btn1{
-}
-
 #btn0{
     height: 130px;
     float: right;
@@ -109,27 +54,6 @@
     padding-top: 65px;
 }
 
-#btn9{
-}
-
-#btn8{
-
-}
-
-#btn7{
-}
-
-#btn6{
-
-}
-
-#btn5{
-
-}
-
-#btn4{
-
-}
 
 #_26{
     width: 256px;

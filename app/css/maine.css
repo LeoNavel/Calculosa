@@ -31,6 +31,19 @@ body{
     margin: 0;
 }
 
+#operation{
+    text-align: center;
+    width: 25px;
+}
+
+#output{
+    max-width: 700px;
+    max-height: 62px;
+    text-align: right;
+    position: relative;
+    float: right;
+}
+
 #btns{
     top: 216px;
     left: 115px;
