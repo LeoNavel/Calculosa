@@ -1,10 +1,9 @@
 
 #main{
-    width: 1024px;
+    width: 924px;
     height: 768px;
     opacity: 1;
     margin: 0 auto;
-    background-color: rgba(37, 40, 69, 1);
     border-width: 1px;
     padding: 0;
     overflow: visible;
@@ -15,7 +14,7 @@
 #output{
     width: 745px;
     height: 62px;
-    left: 140px;
+    left:90px;
     top: 76px;
     opacity: 1;
     margin: 0;
@@ -34,7 +33,7 @@
 #_3{
     width: 318px;
     height: 263px;
-    left: 540px;
+    left: 490px;
     top: 383px;
     opacity: 1;
     margin: 0;
@@ -48,164 +47,93 @@
 
 }
 
-#_4{
-    left: 444px;
-    top: 216px;
+#btnDiv{
 
 }
 
-#_5{
-    left: 351px;
-    top: 216px;
+#btnMul{
 }
 
-#_6{
-    left: 258px;
-    top: 216px;
-
+#btnAdd{
 }
 
-#_7{
-
-    left: 165px;
-    top: 216px;
-
+#btnSub{
 }
 
-#_8{
+#btnComma{
+}
 
-    left: 351px;
-    top: 376px;
+#btnSign{
 
 }
 
-#_9{
+#btnCA{
+}
 
-    left: 444px;
-    top: 296px;
+#btnSolve{
+}
+
+#btnHelp{
 
 
 }
 
-#_10{
-    left: 258px;
-    top: 376px;
-    opacity: 1;
-
-}
-
-#_11{
-    left: 351px;
-    top: 296px;
-}
-
-#_12{
-
-    left: 444px;
-    top: 469px;
-
-}
-
-#_13{
-
-    left: 258px;
-    top: 296px;
-
-}
-
-#_14{
-
-    left: 165px;
-    top: 296px;
-
-}
-
-#_15{
-
-    left: 165px;
-    top: 376px;
-
-}
-
-#_16{
-
-    left: 351px;
-    top: 469px;
+#btnPower{
 
 
 }
 
-#_17{
-
-    left: 258px;
-    top: 469px;
+#btnLog{
 
 }
 
-#_18{
+#btnDel{
+}
 
-    left: 165px;
-    top: 469px;
+#btn3{
+
 
 }
 
-#_19{
+#btn2{
 
+}
+
+#btn1{
+}
+
+#btn0{
     height: 130px;
-    left: 444px;
-    top: 549px;
+    float: right;
+    margin-top: 30px;
+}
 
+#btn9{
+}
+
+#btn8{
 
 }
 
-#_20{
+#btn7{
+}
 
-    left: 351px;
-    top: 629px;
+#btn6{
 
 }
 
-#_21{
-
-    left: 258px;
-    top: 629px;
-
+#btn5{
 
 }
 
-#_22{
-
-    left: 165px;
-    top: 629px;
-
-}
-
-#_23{
-
-    left: 351px;
-    top: 549px;
-
-}
-
-#_24{
-
-    left: 258px;
-    top: 549px;
-
-}
-
-#_25{
-
-    left: 165px;
-    top: 549px;
-
+#btn4{
 
 }
 
 #_26{
     width: 256px;
     height: 153px;
-    left: 602px;
+    left: 552px;
     top: 216px;
     opacity: 1;
     margin: 0;
