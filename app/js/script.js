@@ -1,6 +1,7 @@
 /**Math library for our calculator**/
 var style = 0;
 var Mathlib = require('../js/Mathlib/Mathlib.js');
+var Calculosa = new calculosa;
 var olejvan = {state: 1, vars: {a: "", b: "", operation: ""}};
 $(function(){
     $(".number").click(function(){
@@ -13,8 +14,25 @@ $(function(){
             str += $(this).text();
             outputElement.text(str);
         }else{
-            // todo calculosa error
+            Calculosa.err("screen overflow");  // todo calculosa error
         }
+    });
+
+    $(".point").click(function(){
+        var outputElement = $("#output");
+        var str = outputElement.text();
+        if(str.length>0){
+            if(str.slice(-1)==".")
+                str = str.slice(0, -1);
+            else if(str.indexOf(".")<0)
+                str += ".";
+            else{
+                Calculosa.err("you can have just one point");  //todo calculosa error
+                return;
+            }
+            outputElement.text(str);
+        }else
+            outputElement.text("0.");
     });
 
 
