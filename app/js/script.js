@@ -3,17 +3,26 @@ var style = 0;
 var Mathlib = require('../js/Mathlib/Mathlib.js');
 var Calculosa = new calculosa;
 var olejvan = {state: 1, vars: {a: "", b: "", operation: ""}};
+var screen = {operation: "", output: "", operationStr: "", outputStr: ""};
 $(function(){
     $(".number").click(function(){
+        reloadScreenData();
         addNumber($(this));
     });
 
-    $(".point").click(function(){
+    $("#btnPoint").click(function(){
+        reloadScreenData();
         floatingPoint();
     });
 
-    $(".sign").click(function(){
+    $("#btnSign").click(function(){
+        reloadScreenData();
         changeSign();
+    });
+
+    $("#btnDel").click(function(){
+        reloadScreenData();
+        deleteLastNumber();
     });
 
     $("#changeStyle").click(function(){
@@ -21,15 +30,38 @@ $(function(){
     });
 });
 
+function reloadScreenData(){
+    screen.operation = $("#operation");
+    screen.operationStr = screen.operation.text();
+    screen.output = $("#output");
+    screen.outputStr = screen.output.text();
+}
+
+function setScreenData(){
+    screen.operation.text(screen.operationStr);
+    screen.output.text(screen.outputStr);
+}
+
+function deleteLastNumber(){
+    var str = screen.outputStr;
+    if(str.length>0){
+        str = str.slice(0, -1);
+        screen.outputStr = str;
+        setScreenData();
+    }else{
+        Calculosa.err("nothing to delete"); //todo
+    }
+}
+
 function changeSign(){
-    var outputElement = $("#output");
-    var str = outputElement.text();
+    var str = screen.outputStr;
     if(str.length>0){
         if(str.substr(0, 1)=="-")
             str = str.substr(1);
         else
             str = "-" + str;
-        outputElement.text(str);
+        screen.outputStr = str;
+        setScreenData();
     }else{
         Calculosa.err("firstly enter a number"); //todo calculosa error
     }
@@ -39,19 +71,18 @@ function addNumber(element){
     if(olejvan.state==3){
         //todo
     }
-    var outputElement = $("#output");
-    var str = outputElement.text();
+    var str = screen.outputStr;
     if(str.length<30){
         str += element.text();
-        outputElement.text(str);
+        screen.outputStr = str;
+        setScreenData();
     }else{
         Calculosa.err("screen overflow");  // todo calculosa error
     }
 }
 
 function floatingPoint(){
-    var outputElement = $("#output");
-    var str = outputElement.text();
+    var str = screen.outputStr;
     if(str.length>0){
         if(str.slice(-1)==".")
             str = str.slice(0, -1);
@@ -61,9 +92,10 @@ function floatingPoint(){
             Calculosa.err("you can have just one point");  //todo calculosa error
             return;
         }
-        outputElement.text(str);
+        screen.outputStr = str;
     }else
-        outputElement.text("0.");
+        screen.outputStr = "0.";
+    setScreenData();
 }
 
 function changeStyle(){
