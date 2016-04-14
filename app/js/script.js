@@ -5,24 +5,35 @@ var Calculosa = new calculosa;
 var olejvan = {state: 1, vars: {a: "", b: "", operation: ""}};
 var screen = {operation: "", output: "", operationStr: "", outputStr: ""};
 $(function(){
-    $(".number").click(function(){
+    $(".btn").click(function(){
+        var classes = $(this).attr("class").split(" ");
+        var index = classes.indexOf("btn");
+        if(index> -1){
+            classes.splice(index, 1);
+        }
+        index = classes.indexOf("btn-default");
+        if(index> -1){
+            classes.splice(index, 1);
+        }
         reloadScreenData();
-        addNumber($(this));
-    });
+        if(classes.length>0){
+            if($(this).hasClass("number"))
+                addNumber($(this));
 
-    $("#btnPoint").click(function(){
-        reloadScreenData();
-        floatingPoint();
-    });
-
-    $("#btnSign").click(function(){
-        reloadScreenData();
-        changeSign();
-    });
-
-    $("#btnDel").click(function(){
-        reloadScreenData();
-        deleteLastNumber();
+        }else{
+            var ids = $(this).attr("id");
+            if(ids.length>0){
+                if(ids=="btnPoint")
+                    floatingPoint();
+                if(ids=="btnSign")
+                    changeSign();
+                if(ids=="btnDel")
+                    deleteLastNumber();
+                if(ids=="btnCA")
+                    clearAll();
+            }
+        }
+        setScreenData();
     });
 
     $("#changeStyle").click(function(){
@@ -42,12 +53,21 @@ function setScreenData(){
     screen.output.text(screen.outputStr);
 }
 
+function clearAll(){
+    olejvan.state = 1;
+    olejvan.vars.a = "";
+    olejvan.vars.b = "";
+    olejvan.vars.operation = "";
+    screen.operationStr = "";
+    screen.outputStr = "";
+    setScreenData();
+}
+
 function deleteLastNumber(){
     var str = screen.outputStr;
     if(str.length>0){
         str = str.slice(0, -1);
         screen.outputStr = str;
-        setScreenData();
     }else{
         Calculosa.err("nothing to delete"); //todo
     }
@@ -61,7 +81,6 @@ function changeSign(){
         else
             str = "-" + str;
         screen.outputStr = str;
-        setScreenData();
     }else{
         Calculosa.err("firstly enter a number"); //todo calculosa error
     }
@@ -75,7 +94,6 @@ function addNumber(element){
     if(str.length<30){
         str += element.text();
         screen.outputStr = str;
-        setScreenData();
     }else{
         Calculosa.err("screen overflow");  // todo calculosa error
     }
@@ -95,7 +113,6 @@ function floatingPoint(){
         screen.outputStr = str;
     }else
         screen.outputStr = "0.";
-    setScreenData();
 }
 
 function changeStyle(){
