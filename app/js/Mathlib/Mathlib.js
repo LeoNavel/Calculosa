@@ -70,7 +70,7 @@ exports.logarithm = function(a){
             }
         }
     }else
-        sum = -INFINITY;
+        sum = -Infinity;
     return sum;
 };
 

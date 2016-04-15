@@ -19,7 +19,6 @@ $(function(){
         if(classes.length>0){
             if($(this).hasClass("number"))
                 addNumber($(this));
-
             if($(this).hasClass("binOperand")){
                 var ids = $(this).attr("id");
                 if(ids.length>0){
@@ -33,13 +32,37 @@ $(function(){
                             break;
                         case 2:
                             if(!screen.newNumber){
-                                solve();
+                                solve(true);
                                 screen.operationStr = $(this).text();
                             }
                             changeStateTo(2);
                             break;
                     }
 
+                }
+            }
+            if($(this).hasClass("unOperand")){
+                var ids = $(this).attr("id");
+                if(ids.length>0){
+                    switch(olejvan.state){
+                        case 1:
+                        case 3:
+                            if(screen.outputStr=="")
+                                screen.outputStr = "0";
+                            screen.operationStr = $(this).text();
+                            solve(false);
+                            break;
+                        case 2:
+                            if(!screen.newNumber){
+                                solve(true);
+                                screen.operationStr = $(this).text();
+                                solve(false);
+                            }else{
+                                screen.operationStr = $(this).text();
+                                solve(false);
+                            }
+                            break;
+                    }
                 }
             }
         }else{
@@ -53,7 +76,7 @@ $(function(){
                 if(ids=="btnCA")
                     clearAll();
             if(ids=="btnSolve")
-                solve();
+                solve(true);
             }
         setScreenData();
     });
@@ -63,10 +86,6 @@ $(function(){
     });
 });
 
-function printOlejvan(){
-    console.log("state: " + olejvan.state + "\n\ta: " + olejvan.vars.a + "\n\tb: " + olejvan.vars.b + "\n\to: " + olejvan.vars.operation);
-}
-
 function solveBin(){
     olejvan.vars.b = screen.outputStr;
     var a = olejvan.vars.a,
@@ -74,32 +93,62 @@ function solveBin(){
         op = olejvan.vars.operation;
     a = +a;
     b = +b;
+    var func;
     switch(op){
         case "-":
-            var func = Mathlib.subtraction;
+            func = Mathlib.subtraction;
             break;
         case "+":
-            var func = Mathlib.addition;
+            func = Mathlib.addition;
             break;
         case "x":
-            var func = Mathlib.multiplication;
+            func = Mathlib.multiplication;
             break;
         case "/":
-            var func = Mathlib.division;
+            func = Mathlib.division;
             break;
         case "^":
-            var func = Mathlib.power;
+            func = Mathlib.power;
             break;
     }
     if(func){
         var solution = func(a, b);
-        if(solution){
+        if(!isNaN(solution)){
+            solution = Math.round(solution * 100000000) / 100000000;
             Calculosa.say(a + "" + op + "" + b + "=" + solution);
             screen.outputStr = solution;
 
         }else{
             Calculosa.err("FTW?");
             clearAll();
+        }
+    }
+}
+
+function solveUn(){
+    olejvan.vars.a = screen.outputStr;
+    var a = olejvan.vars.a,
+        op = screen.operationStr;
+    a = +a;
+    var func;
+    switch(op){
+        case "ln":
+            func = Mathlib.logarithm;
+            break;
+        case "!":
+            func = Mathlib.factorial;
+            break;
+    }
+    if(func){
+        var solution = func(a);
+        if(!isNaN(solution)){
+            solution = Math.round(solution * 100000000) / 100000000;
+            var ret = (op=="ln") ? op + "(" + a + ")" : a + "" + op;
+            Calculosa.say(ret + "=" + solution);
+            screen.outputStr = solution;
+        }else{
+            Calculosa.err("WTF?");
+            clearAll()
         }
     }
 }
@@ -131,27 +180,42 @@ function changeStateTo(state){
             }
             break;
         case 3:
-            if(olejvan.state==2){
+            if(olejvan.state==2 || olejvan.state==1){
                 screen.newNumber = true;
                 olejvan.vars.a = screen.outputStr;
                 olejvan.vars.b = "";
                 olejvan.vars.operation = "";
                 olejvan.state = 3;
             }
+
             break;
     }
 }
 
-function solve(){
-    switch(olejvan.state){
-        case 1:
-            Calculosa.err("There is nothing to solve....");
-            break;
-        case 2:
-            solveBin();
+function solve(bin){
+    var e = false;
+    if(bin){
+        switch(olejvan.state){
+            case 1:
+            case 3:
+                Calculosa.err("There is nothing to solve....");
+                e = true;
+                break;
+            case 2:
+                solveBin();
 
+        }
+    }else{
+        switch(olejvan.state){
+            case 1:
+            case 2:
+            case 3:
+                solveUn();
+                break;
+        }
     }
-    changeStateTo(3);
+    if(!e)
+        changeStateTo(3);
     screen.operationStr = "";
 
 }
@@ -209,6 +273,10 @@ function addNumber(element){
 
 function floatingPoint(){
     var str = screen.outputStr;
+    if(screen.newNumber){
+        str = "";
+        screen.newNumber = false;
+    }
     if(str.length>0){
         if(str.slice(-1)==".")
             str = str.slice(0, -1);
