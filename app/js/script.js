@@ -1,6 +1,6 @@
 /**Math library for our calculator**/
 var style = 0;
-var Mathlib = require('../js/Mathlib/Mathlib.js');
+var Mathlib = require("../js/Mathlib/Mathlib");
 var Calculosa = new calculosa;
 var olejvan = {state: 1, vars: {a: "", b: "", operation: ""}};
 var screen = {operation: "", output: "", operationStr: "", outputStr: "", newNumber: true};
@@ -25,15 +25,15 @@ $(function(){
             if($(this).hasClass("binOperand")){
                 var ids = $(this).attr("id");
                 if(ids.length>0){
-                    screen.operationStr = $(this).text();
-                    olejvan.vars.operation = screen.operationStr;
                     switch(olejvan.state){
                         case 1:
+                            screen.operationStr = $(this).text();
                             changeStateTo(2);
                             break;
                         case 2:
                             if(!screen.newNumber){
-                                solveBin();
+                                solve();
+                                screen.operationStr = $(this).text();
                             }
                             changeStateTo(2);
                             break;
@@ -95,8 +95,6 @@ function solveBin(){
             var func = Mathlib.power;
             break;
     }
-    console.log(op);
-    console.log("func: " + func);
     if(func){
         var solution = func(a, b);
         if(solution){
