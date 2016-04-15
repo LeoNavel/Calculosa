@@ -3,9 +3,11 @@ var style = 0;
 var Mathlib = require('../js/Mathlib/Mathlib.js');
 var Calculosa = new calculosa;
 var olejvan = {state: 1, vars: {a: "", b: "", operation: ""}};
-var screen = {operation: "", output: "", operationStr: "", outputStr: ""};
+var screen = {operation: "", output: "", operationStr: "", outputStr: "", newNumber: true};
 $(function(){
     $(".btn").click(function(){
+        // console.log("------------------");
+        // printOlejvan();
         var classes = $(this).attr("class").split(" ");
         var index = classes.indexOf("btn");
         if(index> -1){
@@ -20,9 +22,29 @@ $(function(){
             if($(this).hasClass("number"))
                 addNumber($(this));
 
+            if($(this).hasClass("binOperand")){
+                var ids = $(this).attr("id");
+                if(ids.length>0){
+                    screen.operationStr = $(this).text();
+                    olejvan.vars.operation = screen.operationStr;
+                    switch(olejvan.state){
+                        case 1:
+                            changeStateTo(2);
+                            break;
+                        case 2:
+                            if(!screen.newNumber){
+                                solveBin();
+                            }
+                            changeStateTo(2);
+                            break;
+                    }
+
+                }
+            }
+
+
         }else{
             var ids = $(this).attr("id");
-            if(ids.length>0){
                 if(ids=="btnPoint")
                     floatingPoint();
                 if(ids=="btnSign")
@@ -31,15 +53,63 @@ $(function(){
                     deleteLastNumber();
                 if(ids=="btnCA")
                     clearAll();
+            if(ids=="btnSolve")
+                solve();
             }
-        }
         setScreenData();
+        // printOlejvan()
     });
 
     $("#changeStyle").click(function(){
         changeStyle();
     });
 });
+
+function printOlejvan(){
+    console.log("state: " + olejvan.state + "\n\ta: " + olejvan.vars.a + "\n\tb: " + olejvan.vars.b + "\n\to: " + olejvan.vars.operation);
+}
+
+function solveBin(){
+    olejvan.vars.b = screen.outputStr;
+    var a = olejvan.vars.a,
+        b = olejvan.vars.b,
+        op = olejvan.vars.operation;
+    a = +a;
+    b = +b;
+    console.log(a);
+    console.log(b);
+    switch(op){
+        case "-":
+            var func = Mathlib.subtraction;
+            break;
+        case "+":
+            var func = Mathlib.addition;
+            break;
+        case "x":
+            var func = Mathlib.multiplication;
+            break;
+        case "/":
+            var func = Mathlib.division;
+            break;
+        case "^":
+            var func = Mathlib.power;
+            break;
+    }
+    console.log(op);
+    console.log("func: " + func);
+    if(func){
+        var solution = func(a, b);
+        if(solution){
+            Calculosa.say(a + "" + op + "" + b + "=" + solution);
+            screen.outputStr = solution;
+            changeStateTo(3);
+
+        }else{
+            Calculosa.err("FTW?");
+            clearAll();
+        }
+    }
+}
 
 function reloadScreenData(){
     screen.operation = $("#operation");
@@ -51,6 +121,40 @@ function reloadScreenData(){
 function setScreenData(){
     screen.operation.text(screen.operationStr);
     screen.output.text(screen.outputStr);
+}
+
+function changeStateTo(state){
+    switch(state){
+        case 2:
+            if(olejvan.state==1 || olejvan.state==3){
+                screen.newNumber = true;
+                olejvan.vars.a = screen.outputStr;
+                olejvan.vars.operation = screen.operationStr;
+                olejvan.vars.b = "";
+                olejvan.state = 2;
+            }
+            break;
+        case 3:
+            if(olejvan.state==2){
+                screen.newNumber = true;
+                olejvan.vars.a = screen.outputStr;
+                olejvan.vars.b = "";
+                olejvan.vars.operation = "";
+                olejvan.state = 3;
+            }
+    }
+}
+
+function solve(){
+    switch(olejvan.state){
+        case 1:
+            Calculosa.err("There is nothing to solve....");
+            break;
+        case 2:
+            solveBin();
+
+    }
+
 }
 
 function clearAll(){
@@ -87,10 +191,15 @@ function changeSign(){
 }
 
 function addNumber(element){
+
     if(olejvan.state==3){
         //todo
     }
     var str = screen.outputStr;
+    if(screen.newNumber){
+        str = "";
+        screen.newNumber = false;
+    }
     if(str.length<30){
         str += element.text();
         screen.outputStr = str;
