@@ -199,17 +199,22 @@ exports.round = function(x) {
         x = x*-1;
     }
     num = x%1;
-    if (num>0){
-        if(num>0.5){
-            x = x-num+1;
+    if (num>0 && sign>0) {
+        if (num >= 0.5) {
+            return x - num + 1;
         }
-        else{
-            x = x-num;
+        else {
+            return x - num;
         }
-    if (sign<0){
-        x = x*-1;
     }
-    return x;
+    if (num>0 && sign<0) {
+        if (num > 0.5) {
+            return (x - num + 1)*(-1);
+        }
+        else {
+            return (x - num)*(-1);
+        }
     }
-}
+     return x;
+    }
 /*** End of file Mathlib.js ***/
