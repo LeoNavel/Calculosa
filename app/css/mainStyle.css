@@ -30,11 +30,11 @@
 
 }
 
-#_3{
+#calcImg{
     width: 318px;
-    height: 263px;
-    left: 490px;
-    top: 383px;
+    height: 318px;
+    right: 75px;
+    bottom: 100px;
     opacity: 1;
     margin: 0;
     border-width: 1px;
@@ -44,7 +44,6 @@
     font-style: normal;
     text-align: center;
     color: rgba(247, 247, 247, 1);
-
 }
 
 #btn0{
@@ -55,7 +54,7 @@
 }
 
 
-#_26{
+#bublina{
     width: 256px;
     height: 153px;
     left: 552px;

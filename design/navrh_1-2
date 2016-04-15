@@ -1,0 +1,2320 @@
+{
+  "name": "Untitled project",
+  "description": null,
+  "contentType": "json",
+  "fileVersion": 3,
+  "type": "WebProject",
+  "theme": "napkin",
+  "contents": {
+    "id": 2886915,
+    "appName": "Untitled project",
+    "saveTime": "2016-03-16T14:09:02.486Z",
+    "lastNotificationId": 0,
+    "theme": "napkin",
+    "isCrazy": true,
+    "defaultFontFamily": "Lucida Console",
+    "pageGroups": [
+      {
+        "type": "sketch.framework.PageGroup",
+        "properties": {
+          "id": "1ac02673-6525-80fb-bac9-853dbcdb5181",
+          "name": "Default group",
+          "pageIds": [
+            "59a30292-edb4-1f5a-b5af-d11a3a3c856c",
+            "c6d1f24e-095a-a60c-d55e-e57a1a3ee667",
+            "282cd395-e685-1dca-78f2-95a0fe2e9d41",
+            "a1217d9e-6efb-519a-7eb0-1d2fd3c57e8c",
+            "c05872fa-37a4-59ec-6a24-3c9b5b3b93c9",
+            "cff65173-cc1f-d05a-3b87-ad7a161e54ca",
+            "9f088905-950b-46f1-babe-94aa59dda50a"
+          ]
+        }
+      }
+    ],
+    "satelliteProjects": [],
+    "extraParameters": null,
+    "pages": [
+      {
+        "version": 1,
+        "id": "59a30292-edb4-1f5a-b5af-d11a3a3c856c",
+        "type": "sketch.ui.pages.PortableDevicePage",
+        "name": "navrh1",
+        "background": {
+          "value": null,
+          "type": null,
+          "lineWidth": 0,
+          "__type__": "sketch.framework.Brush"
+        },
+        "children": [
+          {
+            "type": "sketch.ui.common.PortableDevice",
+            "version": 1,
+            "id": "f6eee6c0-6a0b-de99-c32f-bc72f50ac7fc",
+            "properties": {
+              "width": 3704,
+              "height": 2288,
+              "background.value": "rgba(37,40,69,1)",
+              "background.type": "color",
+              "background.__type__": "sketch.framework.Brush"
+            },
+            "children": [
+              {
+                "type": "sketch.ui.common.ClickSpot",
+                "version": 1,
+                "id": "eff46808-72ca-ca97-5589-ba019620199b",
+                "properties": {
+                  "width": 931,
+                  "height": 695,
+                  "name": "Click spot",
+                  "left": 21,
+                  "top": 19,
+                  "visible": false,
+                  "opacity": 1,
+                  "angle": 0
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "87a0237d-dc75-a6df-3ae2-0ef053072891",
+                "properties": {
+                  "width": 745,
+                  "height": 62,
+                  "name": null,
+                  "left": 140,
+                  "top": 76,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "padding.__type__": "sketch.framework.Box",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.TextBoxTemplate",
+                  "text": "|"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "borderBrush.value": "rgba(13,7,13,1)",
+                      "borderBrush.type": "color",
+                      "borderBrush.lineWidth": null,
+                      "borderBrush.__type__": "sketch.framework.Brush",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush",
+                      "font.family": "Lucida Console"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.ui.common.Icon",
+                "version": 6,
+                "id": "672596c9-0828-57ba-78b7-b082f87085d8",
+                "properties": {
+                  "width": 318,
+                  "height": 263,
+                  "name": "Icon [49c02a84-1017-775f-a96c-13c0f1b4935b]",
+                  "left": 540,
+                  "top": 383,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "borderBrush.lineWidth": 0,
+                  "borderBrush.__type__": "sketch.framework.Brush",
+                  "source.name": "smiley-happy",
+                  "source.__type__": "sketch.framework.ImageSourceFont",
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "clipSelf": true,
+                  "backgroundBrush.value": "rgba(247,247,247,1)",
+                  "backgroundBrush.type": "color",
+                  "backgroundBrush.__type__": "sketch.framework.Brush"
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "1987a760-b056-0fda-5859-d03ed53174ac",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 444,
+                  "top": 216,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "/"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "a3002dd2-356f-ab60-5ec5-d6ea88770887",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 351,
+                  "top": 216,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "x"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "03082c28-c5c5-72f3-a122-e63ddfd04427",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 258,
+                  "top": 216,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "+"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "1c5667a9-3a8e-224d-64cd-d655863f2513",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 165,
+                  "top": 216,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "-"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "d7ec485c-65e4-5725-599f-cd7eda3a3b98",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 351,
+                  "top": 376,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": ","
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "7aa42bd1-dd6f-7de9-8d91-5766f19086bb",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 444,
+                  "top": 296,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "+/-"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "292105fb-4ed5-5e48-346f-80d245d88410",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 258,
+                  "top": 376,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "CA"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "261d4f54-022d-11c2-0962-4f0348329273",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 351,
+                  "top": 296,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "="
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "TomsHandwritten",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "77ab59f2-f6ed-d123-e3b7-a09ccb11894e",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 444,
+                  "top": 469,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "?"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "TomsHandwritten",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "dbcadd86-806b-acb1-71ec-d1986551018e",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 258,
+                  "top": 296,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "^"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "4605ccd3-75bf-950e-5cab-e0251ba3fd9a",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 165,
+                  "top": 296,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "log"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "dd301db2-c674-01af-cc44-f37d18f56911",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 165,
+                  "top": 376,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "DEL"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "b46b7723-9efb-1da9-a555-3f21d5a6fd07",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 351,
+                  "top": 469,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "3"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "6915c3d9-4c93-7a87-cafe-29c0143152cb",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 258,
+                  "top": 469,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "2"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "bf929e7a-33b6-883c-a5c2-21f13001191f",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 165,
+                  "top": 469,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "1"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "10e0ec3e-20c1-eaeb-c01b-406aa8bf135c",
+                "properties": {
+                  "width": 50,
+                  "height": 130,
+                  "name": null,
+                  "left": 444,
+                  "top": 549,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "0"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "TomsHandwritten",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "ccb72d6b-dc24-bdbb-c522-e0b87bd759dd",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 351,
+                  "top": 629,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "9"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "551f7845-3025-932f-2cba-1e5cfe359965",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 258,
+                  "top": 629,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "8"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "26b8f931-d234-d869-bfbc-862cd89abce9",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 165,
+                  "top": 629,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "7"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "db143cb5-5c69-b117-c433-f93a2fec52c5",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 351,
+                  "top": 549,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "6"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "e93716eb-a5fb-2779-1c0c-8680ca5e710a",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 258,
+                  "top": 549,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "5"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "684fe863-f590-2987-ebd9-ce6997dc6c99",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 165,
+                  "top": 549,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "4"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(247,247,247,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.ui.common.Icon",
+                "version": 6,
+                "id": "154f71a6-7f7c-0eaa-8091-41a49b0ea157",
+                "properties": {
+                  "width": 256,
+                  "height": 153,
+                  "name": "Icon [49c02a84-1017-775f-a96c-13c0f1b4935b]",
+                  "left": 602,
+                  "top": 216,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "borderBrush.lineWidth": 0,
+                  "borderBrush.__type__": "sketch.framework.Brush",
+                  "source.name": "cloud",
+                  "source.__type__": "sketch.framework.ImageSourceFont",
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "clipSelf": true,
+                  "backgroundBrush.value": "rgba(247,247,247,1)",
+                  "backgroundBrush.type": "color",
+                  "backgroundBrush.__type__": "sketch.framework.Brush"
+                }
+              }
+            ],
+            "panelProperties": {
+              "type": "sketch.ui.common.PortableDevicePanel",
+              "version": 1,
+              "id": "94c405a7-922e-a1f4-7b0d-23f3368bfd85",
+              "properties": {
+                "width": 1024,
+                "height": 768,
+                "left": 1340,
+                "top": 760,
+                "clipSelf": true
+              }
+            }
+          },
+          {
+            "type": "sketch.framework.Rectangle",
+            "version": 3,
+            "id": "45e3518e-314b-c6b2-4e18-41dcc91a372f",
+            "properties": {
+              "left": 0,
+              "top": 0
+            }
+          }
+        ],
+        "isDeleted": false,
+        "groupId": "1ac02673-6525-80fb-bac9-853dbcdb5181",
+        "screenType": "Browser"
+      },
+      {
+        "version": 1,
+        "id": "c6d1f24e-095a-a60c-d55e-e57a1a3ee667",
+        "type": "sketch.ui.pages.PortableDevicePage",
+        "name": "navrh3",
+        "background": {
+          "value": null,
+          "type": null,
+          "lineWidth": 0,
+          "__type__": "sketch.framework.Brush"
+        },
+        "children": [
+          {
+            "type": "sketch.ui.common.PortableDevice",
+            "version": 1,
+            "id": "32b1d2c6-5a11-603a-def6-a9abffdbef3a",
+            "properties": {
+              "width": 3704,
+              "height": 2288,
+              "background.value": "https://ninjastorage.blob.core.windows.net/companyfiles/2883202/dd0a239e-c16c-44f1-a286-6a1c43922440.png",
+              "background.type": "customPattern",
+              "background.__type__": "sketch.framework.Brush"
+            },
+            "children": [
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "1efee6e0-ff53-d89f-47bb-b352d18ff78e",
+                "properties": {
+                  "width": 745,
+                  "height": 62,
+                  "name": null,
+                  "left": 154,
+                  "top": 93,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "padding.__type__": "sketch.framework.Box",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.TextBoxTemplate",
+                  "text": "|"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "borderBrush.value": "rgba(13,7,13,1)",
+                      "borderBrush.type": "color",
+                      "borderBrush.lineWidth": null,
+                      "borderBrush.__type__": "sketch.framework.Brush",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush",
+                      "font.family": "Lucida Console"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.ui.common.Icon",
+                "version": 6,
+                "id": "820578e4-7f3f-5416-93f1-57a0bffbd368",
+                "properties": {
+                  "width": 318,
+                  "height": 263,
+                  "name": "Icon [49c02a84-1017-775f-a96c-13c0f1b4935b]",
+                  "left": 554,
+                  "top": 400,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "borderBrush.lineWidth": 0,
+                  "borderBrush.__type__": "sketch.framework.Brush",
+                  "source.name": "smiley-happy",
+                  "source.__type__": "sketch.framework.ImageSourceFont",
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "clipSelf": true,
+                  "backgroundBrush.value": "rgba(178,229,240,1)",
+                  "backgroundBrush.type": "color",
+                  "backgroundBrush.__type__": "sketch.framework.Brush"
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "615dc8fb-1d9c-e5ab-6f8b-dbf0327ec51a",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 458,
+                  "top": 233,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "/"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "91db53e8-66df-b0e0-393e-7f402ca42554",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 365,
+                  "top": 233,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "x"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "9f2bc67d-4c71-4ae0-5a49-3c14e153e734",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 272,
+                  "top": 233,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "+"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "6cf2486e-3282-daae-54c2-a25d81a0fe3d",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 179,
+                  "top": 233,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "-"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "9a92ce10-1931-5c71-49dc-f7ef572e9839",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 365,
+                  "top": 393,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": ","
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "10654797-b3f3-ea73-b282-a1ec4cf39fef",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 458,
+                  "top": 313,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "+/-"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "1ca4dbb5-ee8f-c0c4-ee92-7097d7f29a48",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 272,
+                  "top": 393,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "CA"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "e2f46ded-77a7-abb2-91bd-2455d0e5ce18",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 365,
+                  "top": 313,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "="
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "TomsHandwritten",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "8cd8dcd1-08ca-b56c-e330-d26436007fab",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 458,
+                  "top": 486,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "?"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "TomsHandwritten",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "b271bf79-ec96-7d1f-b1d6-de16f2871332",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 272,
+                  "top": 313,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "^"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "3a9e77f0-b057-24c2-2d87-481e50e87e39",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 179,
+                  "top": 313,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "log"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "60a2f1af-faa3-4d3d-c080-9a18388bb53b",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 179,
+                  "top": 393,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "DEL"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "d828d214-497e-599d-09f4-5d5043594643",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 365,
+                  "top": 486,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "3"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "da96cc4f-e86f-8b27-abe5-94e5c9d7f334",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 272,
+                  "top": 486,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "2"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "43c75752-cf42-61ab-b6af-730fd0c91c45",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 179,
+                  "top": 486,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "1"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "25394d66-5fd6-74c0-168a-3a8de131bf02",
+                "properties": {
+                  "width": 50,
+                  "height": 130,
+                  "name": null,
+                  "left": 458,
+                  "top": 566,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "0"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "TomsHandwritten",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "cc9678e2-d2f4-45e8-cb81-59bc85880bd4",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 365,
+                  "top": 646,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "9"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "ce5f3962-634d-da6b-4de3-3550c21184cc",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 272,
+                  "top": 646,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "8"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "626cc8ef-ed04-bd33-f954-ffc63899930f",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 179,
+                  "top": 646,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "7"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "63370015-d2f5-9a22-c79a-afd49c12b27b",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 365,
+                  "top": 566,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "6"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "10aa30be-6be9-913d-3d47-2510c08c1dd4",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 272,
+                  "top": 566,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "5"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.framework.TemplatedElement",
+                "version": 1,
+                "id": "fb7f9816-acb8-9ab6-0ebe-9b9fcb20cc42",
+                "properties": {
+                  "width": 50,
+                  "height": 50,
+                  "name": null,
+                  "left": 179,
+                  "top": 566,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "cornerRadius.bottomLeft": 10,
+                  "cornerRadius.bottomRight": 10,
+                  "cornerRadius.upperLeft": 10,
+                  "cornerRadius.upperRight": 10,
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "templateId": "ui.web.templates.ButtonTemplate",
+                  "iconSource.__type__": "sketch.framework.ImageSourceNone",
+                  "text": "4"
+                },
+                "states": {
+                  "default": {
+                    "properties": {
+                      "font.family": "Lucida Console",
+                      "font.size": 26,
+                      "font.lineHeight": 1.1,
+                      "font.italic": false,
+                      "font.bold": true,
+                      "font.underline": false,
+                      "font.color.value": "web.button.text",
+                      "font.color.type": "resource",
+                      "font.color.lineWidth": null,
+                      "font.color.__type__": "sketch.framework.Brush",
+                      "font.__type__": "sketch.framework.Font",
+                      "backgroundBrush.value": "rgba(178,229,240,1)",
+                      "backgroundBrush.type": "color",
+                      "backgroundBrush.lineWidth": null,
+                      "backgroundBrush.__type__": "sketch.framework.Brush"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "sketch.ui.common.Icon",
+                "version": 6,
+                "id": "88e3ab89-5fc6-ad6b-9955-c5a076e40d95",
+                "properties": {
+                  "width": 256,
+                  "height": 153,
+                  "name": "Icon [49c02a84-1017-775f-a96c-13c0f1b4935b]",
+                  "left": 616,
+                  "top": 233,
+                  "margin.__type__": "sketch.framework.Box",
+                  "shadow.color": "black",
+                  "shadow.__type__": "sketch.framework.Shadow",
+                  "anchor.__type__": "sketch.framework.Anchor",
+                  "borderBrush.lineWidth": 0,
+                  "borderBrush.__type__": "sketch.framework.Brush",
+                  "source.name": "cloud",
+                  "source.__type__": "sketch.framework.ImageSourceFont",
+                  "cornerRadius.__type__": "sketch.framework.QuadAndLock",
+                  "clipSelf": true,
+                  "backgroundBrush.value": "rgba(178,229,240,1)",
+                  "backgroundBrush.type": "color",
+                  "backgroundBrush.__type__": "sketch.framework.Brush"
+                }
+              }
+            ],
+            "panelProperties": {
+              "type": "sketch.ui.common.PortableDevicePanel",
+              "version": 1,
+              "id": "ea9bd191-c74d-53c2-3831-83ef7289a530",
+              "properties": {
+                "width": 1024,
+                "height": 768,
+                "left": 1340,
+                "top": 760,
+                "clipSelf": true
+              }
+            }
+          }
+        ],
+        "isDeleted": false,
+        "groupId": "1ac02673-6525-80fb-bac9-853dbcdb5181",
+        "screenType": "Browser"
+      },
+
+        "isDeleted": false,
+        "groupId": "1ac02673-6525-80fb-bac9-853dbcdb5181",
+        "screenType": "Browser"
+      }
+    ],
+    "resources": {
+      "templates": {},
+      "colorPallet": []
+    },
+    "modelVersion": 5,
+    "version": "82da02cf-e32b-409b-ab28-4451289ade75",
+    "pageStatuses": [],
+    "projectType": "WebProject"
+  }
+}
