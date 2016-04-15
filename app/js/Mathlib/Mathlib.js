@@ -184,4 +184,32 @@ exports.factorial = (function(){
         };
     return fn;
 }());
+
+/** @brief Round
+ *
+ *  Rounds given number
+ *
+ *	@param [in] x number
+ *	@return rounded number
+ */
+exports.round = function(x) {
+    var num = 1, sign =1;
+    if (x<0){
+        sign = -1;
+        x = x*-1;
+    }
+    num = x%1;
+    if (num>0){
+        if(num>0.5){
+            x = x-num+1;
+        }
+        else{
+            x = x-num;
+        }
+    if (sign<0){
+        x = x*-1;
+    }
+    return x;
+    }
+}
 /*** End of file Mathlib.js ***/
