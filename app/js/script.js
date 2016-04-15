@@ -79,6 +79,8 @@ $(function(){
                 solve(true);
             }
         setScreenData();
+        if(Calculosa.somethingToSay)
+            Calculosa.say();
     });
 
     $("#changeStyle").click(function(){
@@ -115,11 +117,11 @@ function solveBin(){
         var solution = func(a, b);
         if(!isNaN(solution)){
             solution = Math.round(solution * 100000000) / 100000000;
-            Calculosa.say(a + "" + op + "" + b + "=" + solution);
+            Calculosa.setSentence(a + "" + op + "" + b + "=" + solution);
             screen.outputStr = solution;
 
         }else{
-            Calculosa.err("FTW?");
+            Calculosa.setErr("FTW?");
             clearAll();
         }
     }
@@ -144,10 +146,10 @@ function solveUn(){
         if(!isNaN(solution)){
             solution = Math.round(solution * 100000000) / 100000000;
             var ret = (op=="ln") ? op + "(" + a + ")" : a + "" + op;
-            Calculosa.say(ret + "=" + solution);
+            Calculosa.setSentence(ret + "=" + solution);
             screen.outputStr = solution;
         }else{
-            Calculosa.err("WTF?");
+            Calculosa.setErr("WTF?");
             clearAll()
         }
     }
@@ -198,7 +200,7 @@ function solve(bin){
         switch(olejvan.state){
             case 1:
             case 3:
-                Calculosa.err("There is nothing to solve....");
+                Calculosa.setErr("There is nothing to solve....");
                 e = true;
                 break;
             case 2:
@@ -221,6 +223,7 @@ function solve(bin){
 }
 
 function clearAll(){
+    Calculosa.setSentence("Clear!");
     olejvan.state = 1;
     olejvan.vars.a = "";
     olejvan.vars.b = "";
@@ -236,7 +239,7 @@ function deleteLastNumber(){
         str = str.slice(0, -1);
         screen.outputStr = str;
     }else{
-        Calculosa.err("nothing to delete"); //todo
+        Calculosa.setErr("nothing to delete"); //todo
     }
 }
 
@@ -249,7 +252,7 @@ function changeSign(){
             str = "-" + str;
         screen.outputStr = str;
     }else{
-        Calculosa.err("firstly enter a number"); //todo calculosa error
+        Calculosa.setErr("firstly enter a number"); //todo calculosa error
     }
 }
 
@@ -267,7 +270,7 @@ function addNumber(element){
         str += element.text();
         screen.outputStr = str;
     }else{
-        Calculosa.err("screen overflow");  // todo calculosa error
+        Calculosa.setErr("screen overflow");  // todo calculosa error
     }
 }
 
@@ -283,7 +286,7 @@ function floatingPoint(){
         else if(str.indexOf(".")<0)
             str += ".";
         else{
-            Calculosa.err("you can have just one point");  //todo calculosa error
+            Calculosa.setErr("you can have just one point");  //todo calculosa error
             return;
         }
         screen.outputStr = str;
