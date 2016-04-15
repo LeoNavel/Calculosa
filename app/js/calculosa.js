@@ -30,5 +30,8 @@ function calculosa(){
         this.sentence = "";
         this.err = "";
         this.somethingToSay = false;
+    };
+    this.help = function(){
+        alert("Hey...\nyo...\naj hrd yo nid maj helf...\nwell...\nfok you...");
     }
 }

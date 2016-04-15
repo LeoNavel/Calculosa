@@ -1,72 +1,55 @@
 /**Math library for our calculator**/
+/**
+ * @file script.js
+ *
+ * @brief state machine with function for calculator
+ * @author Filip Leo Klembara
+ * @date 15.4.2016
+ */
 var style = 0;
 var Mathlib = require("../js/Mathlib/Mathlib");
+
 var Calculosa = new calculosa;
+///Our little Calculosa :3
+
 var olejvan = {state: 1, vars: {a: "", b: "", operation: ""}};
+/// state and global vars
+
 var screen = {operation: "", output: "", operationStr: "", outputStr: "", newNumber: true};
+///everything with screen
+
+/** @brief handle click events
+ *
+ * @return There is no return from this hell
+ */
 $(function(){
     $(".btn").click(function(){
+        if($(this).attr("id") == "btnHelp"){
+            Calculosa.help();
+            return;
+        }
         var classes = $(this).attr("class").split(" ");
         var index = classes.indexOf("btn");
         if(index> -1){
-            classes.splice(index, 1);
+            classes.splice(index, 1); //remove btn from classes
         }
         index = classes.indexOf("btn-default");
         if(index> -1){
-            classes.splice(index, 1);
+            classes.splice(index, 1);   //remove btn-default from classes
         }
-        reloadScreenData();
+        reloadScreenData(); //reload data from screen
+        var ids;
         if(classes.length>0){
             if($(this).hasClass("number"))
                 addNumber($(this));
             if($(this).hasClass("binOperand")){
-                var ids = $(this).attr("id");
-                if(ids.length>0){
-                    switch(olejvan.state){
-                        case 1:
-                        case 3:
-                            if(screen.outputStr=="")
-                                screen.outputStr = "0";
-                            screen.operationStr = $(this).text();
-                            changeStateTo(2);
-                            break;
-                        case 2:
-                            if(!screen.newNumber){
-                                solve(true);
-                                screen.operationStr = $(this).text();
-                            }
-                            changeStateTo(2);
-                            break;
-                    }
-
-                }
+                doBinOperand.call(this);
             }
             if($(this).hasClass("unOperand")){
-                var ids = $(this).attr("id");
-                if(ids.length>0){
-                    switch(olejvan.state){
-                        case 1:
-                        case 3:
-                            if(screen.outputStr=="")
-                                screen.outputStr = "0";
-                            screen.operationStr = $(this).text();
-                            solve(false);
-                            break;
-                        case 2:
-                            if(!screen.newNumber){
-                                solve(true);
-                                screen.operationStr = $(this).text();
-                                solve(false);
-                            }else{
-                                screen.operationStr = $(this).text();
-                                solve(false);
-                            }
-                            break;
-                    }
-                }
+                doUnOperand.call(this);
             }
         }else{
-            var ids = $(this).attr("id");
+            ids = $(this).attr("id");
                 if(ids=="btnPoint")
                     floatingPoint();
                 if(ids=="btnSign")
@@ -88,6 +71,57 @@ $(function(){
     });
 });
 
+
+function doBinOperand(ids){
+    ids = $(this).attr("id");
+    if(ids.length>0){
+        switch(olejvan.state){
+            case 1:
+            case 3:
+                if(screen.outputStr=="")
+                    screen.outputStr = "0";
+                screen.operationStr = $(this).text();
+                changeStateTo(2);
+                break;
+            case 2:
+                if(!screen.newNumber){
+                    solve(true);
+                    screen.operationStr = $(this).text();
+                }
+                changeStateTo(2);
+                break;
+        }
+    }
+}
+
+function doUnOperand(ids){
+    ids = $(this).attr("id");
+    if(ids.length>0){
+        switch(olejvan.state){
+            case 1:
+            case 3:
+                if(screen.outputStr=="")
+                    screen.outputStr = "0";
+                screen.operationStr = $(this).text();
+                solve(false);
+                break;
+            case 2:
+                if(!screen.newNumber){
+                    solve(true);
+                    screen.operationStr = $(this).text();
+                    solve(false);
+                }else{
+                    screen.operationStr = $(this).text();
+                    solve(false);
+                }
+                break;
+        }
+    }
+}
+
+/** @brief solve for binary operands
+ *
+ */
 function solveBin(){
     olejvan.vars.b = screen.outputStr;
     var a = olejvan.vars.a,
