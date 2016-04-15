@@ -6,8 +6,6 @@ var olejvan = {state: 1, vars: {a: "", b: "", operation: ""}};
 var screen = {operation: "", output: "", operationStr: "", outputStr: "", newNumber: true};
 $(function(){
     $(".btn").click(function(){
-        // console.log("------------------");
-        // printOlejvan();
         var classes = $(this).attr("class").split(" ");
         var index = classes.indexOf("btn");
         if(index> -1){
@@ -27,6 +25,9 @@ $(function(){
                 if(ids.length>0){
                     switch(olejvan.state){
                         case 1:
+                        case 3:
+                            if(screen.outputStr=="")
+                                screen.outputStr = "0";
                             screen.operationStr = $(this).text();
                             changeStateTo(2);
                             break;
@@ -41,8 +42,6 @@ $(function(){
 
                 }
             }
-
-
         }else{
             var ids = $(this).attr("id");
                 if(ids=="btnPoint")
@@ -57,7 +56,6 @@ $(function(){
                 solve();
             }
         setScreenData();
-        // printOlejvan()
     });
 
     $("#changeStyle").click(function(){
@@ -76,8 +74,6 @@ function solveBin(){
         op = olejvan.vars.operation;
     a = +a;
     b = +b;
-    console.log(a);
-    console.log(b);
     switch(op){
         case "-":
             var func = Mathlib.subtraction;
@@ -100,7 +96,6 @@ function solveBin(){
         if(solution){
             Calculosa.say(a + "" + op + "" + b + "=" + solution);
             screen.outputStr = solution;
-            changeStateTo(3);
 
         }else{
             Calculosa.err("FTW?");
@@ -123,6 +118,9 @@ function setScreenData(){
 
 function changeStateTo(state){
     switch(state){
+        case 1:
+            clearAll();
+            break;
         case 2:
             if(olejvan.state==1 || olejvan.state==3){
                 screen.newNumber = true;
@@ -140,6 +138,7 @@ function changeStateTo(state){
                 olejvan.vars.operation = "";
                 olejvan.state = 3;
             }
+            break;
     }
 }
 
@@ -152,6 +151,8 @@ function solve(){
             solveBin();
 
     }
+    changeStateTo(3);
+    screen.operationStr = "";
 
 }
 
@@ -191,7 +192,7 @@ function changeSign(){
 function addNumber(element){
 
     if(olejvan.state==3){
-        //todo
+        changeStateTo(1);
     }
     var str = screen.outputStr;
     if(screen.newNumber){
