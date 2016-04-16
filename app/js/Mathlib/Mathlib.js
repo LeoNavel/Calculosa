@@ -11,44 +11,44 @@
  *
  *  Adds b to a
  *
- *	@param [in] a number
- *	@param [in] b number
- *	@return adition of a+b
+ *    @param [in] a number
+ *    @param [in] b number
+ *    @return adition of a+b
  */
-exports.addition = function(a,b){
-return a+b;
+exports.addition = function(a, b){
+    return a + b;
 };
 
 /** @brief Subtraction
  *
  *  Subtracts b from a
  *
- *	@param [in] a number
- *	@param [in] b number
- *	@return subtraction of a-b
+ *    @param [in] a number
+ *    @param [in] b number
+ *    @return subtraction of a-b
  */
-exports.subtraction = function(a,b){
-return a-b;
+exports.subtraction = function(a, b){
+    return a - b;
 };
 
 /** @brief Multiplication
  *
  *  Multiply a and b
  *
- *	@param [in] a number
- *	@param [in] b number
- *	@return multiplication of a*b
+ *    @param [in] a number
+ *    @param [in] b number
+ *    @return multiplication of a*b
  */
-exports.multiplication = function(a,b){
-return a*b;
+exports.multiplication = function(a, b){
+    return a * b;
 };
 
 /** @brief Logarithm
  *
  *  Calculate logarithm from a to 0.00000001 aproximation
  *
- *	@param [in] a number
- *	@return logarithm of a
+ *    @param [in] a number
+ *    @return logarithm of a
  */
 exports.logarithm = function(x){
     var n = 1, eps = 1, log1, log;
@@ -94,15 +94,15 @@ continuedFraction = function(x, n){
  *
  *  Empower a to b
  *
- *	@param [in] a number
- *	@param [in] b number
- *	@return b-th power of a
+ *    @param [in] a number
+ *    @param [in] b number
+ *    @return b-th power of a
  */
-exports.power = function(a,b){
+exports.power = function(a, b){
     var i = 1, c = 1, sign = b;
     var nasobky = [], mocniny = [];
-    if (b<0){
-        b = b*-1;
+    if(b<0){
+        b = b * -1;
     }
     if(a==0){
         return a;
@@ -138,7 +138,7 @@ exports.power = function(a,b){
     }
 
     if(sign<0){
-        c=1/c;
+        c = 1 / c;
     }
     return c;
 };
@@ -147,17 +147,17 @@ exports.power = function(a,b){
  *
  *  A divided by b
  *
- *	@param [in] a number
- *	@param [in] b number
- *	@return division of a by b
+ *    @param [in] a number
+ *    @param [in] b number
+ *    @return division of a by b
  */
-exports.division = function(a,b){
+exports.division = function(a, b){
     var c;
-    if (b!=0){
-        c=a/b;
+    if(b!=0){
+        c = a / b;
     }
     else
-        c=NaN;
+        c = NaN;
     return c;
 };
 
@@ -165,8 +165,8 @@ exports.division = function(a,b){
  *
  *  Calculate factorial
  *
- *	@param [in] a number
- *	@return factorial of a
+ *    @param [in] a number
+ *    @return factorial of a
  */
 
 exports.factorial = (function(){
@@ -189,32 +189,32 @@ exports.factorial = (function(){
  *
  *  Rounds given number
  *
- *	@param [in] x number
- *	@return rounded number
+ *    @param [in] x number
+ *    @return rounded number
  */
-exports.round = function(x) {
-    var num = 1, sign =1;
-    if (x<0){
+exports.round = function(x){
+    var num = 1, sign = 1;
+    if(x<0){
         sign = -1;
-        x = x*-1;
+        x = x * -1;
     }
-    num = x%1;
-    if (num>0 && sign>0) {
-        if (num >= 0.5) {
+    num = x % 1;
+    if(num>0 && sign>0){
+        if(num>=0.5){
             return x - num + 1;
         }
-        else {
+        else{
             return x - num;
         }
     }
-    if (num>0 && sign<0) {
-        if (num > 0.5) {
-            return (x - num + 1)*(-1);
+    if(num>0 && sign<0){
+        if(num>0.5){
+            return (x - num + 1) * (-1);
         }
-        else {
-            return (x - num)*(-1);
+        else{
+            return (x - num) * (-1);
         }
     }
-     return x;
-    }
+    return x;
+}
 /*** End of file Mathlib.js ***/

@@ -164,7 +164,7 @@ function solveBin(){
     if(func){
         var solution = func(a, b);
         if(!isNaN(solution)){
-            solution = Math.round(solution * 100000000) / 100000000;
+            solution = Mathlib.round(solution * 100000000) / 100000000;
             Calculosa.setSentence(a + "" + op + "" + b + "=" + solution);
             screen.outputStr = solution;
 
@@ -199,7 +199,7 @@ function solveUn(){
     if(func){
         var solution = func(a);
         if(!isNaN(solution)){
-            solution = Math.round(solution * 100000000) / 100000000;
+            solution = Mathlib.round(solution * 100000000) / 100000000;
             var ret = (op=="ln") ? op + "(" + a + ")" : a + "" + op;
             Calculosa.setSentence(ret + "=" + solution);
             screen.outputStr = solution;
