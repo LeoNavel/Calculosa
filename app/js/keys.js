@@ -7,7 +7,6 @@
  */
 $(function(){
     $(document).keypress(function(e){
-        console.log(e.which);
         var c = String.fromCharCode(e.which);
         var btnSolve = $("#btnSolve");
         var element;
@@ -23,6 +22,7 @@ $(function(){
             case '-':
                 element = $("#btnSub");
                 break;
+            case '*':
             case 'x':
             case 'X':
                 element = $("#btnMul");

@@ -24,6 +24,8 @@ var screen = {operation: "", output: "", operationStr: "", outputStr: "", newNum
  * @return There is no return from this hell
  */
 $(function(){
+    Calculosa.setSentence("Hello!<br>I am Calculosa!");
+    Calculosa.say();
     $(".btn").click(function(){
         if($(this).attr("id")=="btnHelp"){
             Calculosa.help();
@@ -93,7 +95,8 @@ function doBinOperand(){
                 if(!screen.newNumber){
                     solve(true);    //solve for binary operand
                     screen.operationStr = $(this).text(); //set operation
-                }
+                }else
+                    screen.operationStr = $(this).text(); //set operation
                 changeStateTo(2);
                 break;
         }
@@ -170,7 +173,7 @@ function solveBin(){
 
         }else{
             Calculosa.setErr("FTW?");
-            clearAll();
+            clear();
         }
     }
 }
@@ -205,7 +208,7 @@ function solveUn(){
             screen.outputStr = solution;
         }else{
             Calculosa.setErr("WTF?");
-            clearAll()
+            clear()
         }
     }
 }
@@ -248,16 +251,14 @@ function setScreenData(){
 function changeStateTo(state){
     switch(state){
         case 1:
-            clearAll();
+            clear();
             break;
         case 2:
-            if(olejvan.state==1 || olejvan.state==3){
-                screen.newNumber = true;
-                olejvan.vars.a = screen.outputStr;
-                olejvan.vars.operation = screen.operationStr;
-                olejvan.vars.b = "";
-                olejvan.state = 2;
-            }
+            screen.newNumber = true;
+            olejvan.vars.a = screen.outputStr;
+            olejvan.vars.operation = screen.operationStr;
+            olejvan.vars.b = "";
+            olejvan.state = 2;
             break;
         case 3:
             if(olejvan.state==2 || olejvan.state==1){
@@ -309,6 +310,16 @@ function solve(bin){
 
 }
 
+function clear(){
+    olejvan.state = 1;
+    olejvan.vars.a = "";
+    olejvan.vars.b = "";
+    olejvan.vars.operation = "";
+    screen.operationStr = "";
+    screen.outputStr = "";
+    setScreenData();
+    Calculosa.shutUp();
+}
 /**
  *
  * @brief clear
@@ -317,14 +328,8 @@ function solve(bin){
  *
  */
 function clearAll(){
+    clear();
     Calculosa.setSentence("Clear!");
-    olejvan.state = 1;
-    olejvan.vars.a = "";
-    olejvan.vars.b = "";
-    olejvan.vars.operation = "";
-    screen.operationStr = "";
-    screen.outputStr = "";
-    setScreenData();
 }
 
 /**
@@ -336,7 +341,7 @@ function deleteLastNumber(){
         str = str.slice(0, -1);
         screen.outputStr = str;
     }else{
-        Calculosa.setErr("nothing to delete"); //todo
+        Calculosa.setErr("nothing to delete");
     }
 }
 
@@ -352,7 +357,7 @@ function changeSign(){
             str = "-" + str;
         screen.outputStr = str;
     }else{
-        Calculosa.setErr("firstly enter a number"); //todo calculosa error
+        Calculosa.setErr("firstly enter a number");
     }
 }
 
@@ -378,7 +383,7 @@ function addNumber(element){
         str += element.text();
         screen.outputStr = str;
     }else{
-        Calculosa.setErr("screen overflow");  // todo calculosa error
+        Calculosa.setErr("screen overflow");
     }
 }
 
@@ -400,7 +405,7 @@ function floatingPoint(){
         else if(str.indexOf(".")<0) //check if point exists
             str += ".";
         else{
-            Calculosa.setErr("you can have just one point");  //todo calculosa error
+            Calculosa.setErr("you can have just one point");
             return;
         }
         screen.outputStr = str;

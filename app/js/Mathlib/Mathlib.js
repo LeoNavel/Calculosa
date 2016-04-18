@@ -53,7 +53,7 @@ exports.multiplication = function(a, b){
 exports.logarithm = function(x){
     var n = 1, eps = 1, log1, log;
     if(x==0)
-        return NaN;
+        return -Infinity;
     while(eps>=0.00000001){
         n = n * 2;
         log = continuedFraction(x, n);

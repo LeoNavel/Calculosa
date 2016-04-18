@@ -3,6 +3,7 @@ body * {
     display: block;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -webkit-transition: all 1s;
 }
 body{
     background-color: rgba(37, 40, 69, 1);

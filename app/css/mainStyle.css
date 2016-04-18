@@ -14,7 +14,7 @@
 #screen{
     width: 745px;
     height: 62px;
-    left:90px;
+    left: 90px;
     top: 76px;
     opacity: 1;
     margin: 0;
@@ -53,20 +53,54 @@
     padding-top: 65px;
 }
 
-
 #bublina{
-    width: 256px;
-    height: 153px;
     left: 552px;
     top: 216px;
-    opacity: 1;
-    margin: 0;
-    border-width: 1px;
-    overflow: hidden;
-    line-height: 153px;
-    font-size: 151px;
+    padding: 10px;
+    min-width: 100px;
+    /*!*opacity: 1;*!*/
+    /*margin: 0;*/
+    /*!*border-width: 1px;*!*/
+    /*!*overflow: hidden;*!*/
+    font-size: 26px;
     font-style: normal;
     text-align: center;
-    color: rgba(247, 247, 247, 1);
 
+}
+
+#bublina{
+    max-width: 300px;
+    max-height: 200px;
+    text-align: center;
+    background-color: rgba(247, 247, 247, 1);
+    border: 8px solid #515151;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 2px 2px 4px #444444;
+    -moz-box-shadow: 2px 2px 4px #444444;
+    box-shadow: 2px 2px 4px #444444;
+    overflow: hidden;
+}
+
+#bublina1{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 30px;
+    top: 84px;
+    border: 25px solid;
+    border-color: #515151 transparent transparent #515151;
+}
+
+#bublina2{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 38px;
+    top: 84px;
+    border: 15px solid;
+    border-color: rgba(247, 247, 247, 1) transparent transparent rgba(247, 247, 247, 1);
 }
