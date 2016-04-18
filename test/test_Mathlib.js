@@ -15,6 +15,43 @@ var Mathlib = require('../app/js/Mathlib/Mathlib.js');
  */
 describe('Mathlib', function () {
     /**
+     * Tests for round method of Mathlib.
+     *
+     * Should function like regular mathematic round.
+     */
+    describe('addition()', function(){
+        it('should return 5 when rounding 5', function(){
+            Mathlib.round(5.3).should.equal(5);
+        });
+        it('should return 5 when rounding 5.0', function(){
+            Mathlib.addition(5.0).should.equal(5);
+        });
+        it('should return 5 when rounding 4.5', function(){
+            Mathlib.addition(4.5).should.equal(5);
+        });
+        it('should return 0 when rounding 0', function(){
+            Mathlib.addition(0).should.equal(0);
+        });
+        it('should return 2 when rounding 1.7', function(){
+            Mathlib.addition(1.7).should.equal(2);
+        });
+        it('should return -1 when rounding -1', function(){
+            Mathlib.addition(-1).should.equal(-1);
+        });
+        it('should return -1 when rounding -1.4', function(){
+            Mathlib.addition(-1.4).should.equal(-1);
+        });
+        it('should return -2 when rounding -2.5', function(){
+            Mathlib.addition(-2.5).should.equal(-2);
+        });
+        it('should return -4 when rounding -3.9', function(){
+            Mathlib.addition(-3.9).should.equal(-4);
+        });
+        it('should return -10 when rounding -10', function(){
+            Mathlib.addition(-10).should.equal(-10);
+        });
+    });
+    /**
      * Tests for addition method of Mathlib.
      *
      * Should function like regular mathematic addition.
