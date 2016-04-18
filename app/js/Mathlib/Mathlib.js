@@ -215,6 +215,9 @@ exports.round = function(x){
             return (x - num) * (-1);
         }
     }
+    if(sign<0){
+        x = x* -1;
+    }
     return x;
 }
 /*** End of file Mathlib.js ***/
