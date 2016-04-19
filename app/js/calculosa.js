@@ -6,9 +6,8 @@ function calculosa(){
     this.err = "";
     this.solution = NaN;
     this.somethingToSay = false;
-    this.hello = function(){
-        alert("puf");
-    };
+    this.silent = false;
+
     this.setSentence = function(sentence){
         this.sentence = sentence;
         var pos = sentence.indexOf("=");
@@ -21,6 +20,8 @@ function calculosa(){
         this.somethingToSay = true;
     };
     this.say = function(){
+        if(this.silent)
+            return;
         if(this.err!=""){
             this.errMsg();
         }else if(this.sentence!=""){
@@ -45,7 +46,24 @@ function calculosa(){
         this.somethingToSay = false;
     };
     this.help = function(){
-        alert("Hey...\nyo...\naj hrd yo nid maj helf...\nwell...\nfok you...");
+        // alert("Hey...\nyo...\naj hrd yo nid maj helf...\nwell...\nfok you...");
+        this.silencePlease();
+        $("#calcImg").animate({
+            right: "0px",
+            bottom: "0px"
+        }, 500);
+        $("#main").animate({
+            opacity: "0.3"
+        }, 1000);
+        // $("#calcImg").css("right", "0");
+        // $("#calcImg").css("bottom", "0");
+        // $("#main").css("opacity","0.3");
+        $("body").append("<div id='help'></div>");
+        $("#help").animate({
+            opacity: "1"
+        }, 1000);
+
+
     };
 
     this.errMsg = function(){
@@ -62,14 +80,14 @@ function calculosa(){
             bublina.css("border-color", "#800");
             bublina1.css("border-color", "#800 transparent transparent #800");
         }
-        bublina.hide();
-        bublina1.hide();
-        bublina2.hide();
         bublina.html(str);
         var scrollBar = bublina.hasScrollBar();
+        bublina1.hide();
+        bublina2.hide();
+        bublina.hide();
         if(scrollBar.vertical || scrollBar.horizontal){
             this.sentence = "I'm too lazy to say it...";
-            bublina.html(str);
+            bublina.html(this.sentence);
         }
 
         var height = bublina.outerHeight(),
@@ -77,14 +95,10 @@ function calculosa(){
         var top = 330 - height, left = 700 - (width / 2);
         bublina.css("top", top + "px");
         bublina.css("left", left + "px");
-        bublina1.css("left", left + (width - 50) / 2 + "px");
-        bublina1.css("top", top + height - 8 + "px");
-        bublina2.css("left", left + (width - 32) / 2 + "px");
-        bublina2.css("top", top + height - 8 + "px");
 
-        bublina.fadeIn('slow');
         bublina1.fadeIn('slow');
         bublina2.fadeIn('slow');
+        bublina.fadeIn('slow');
     };
 
     this.shutUp = function(){
@@ -92,6 +106,15 @@ function calculosa(){
         $("#bublina1").hide();
         $("#bublina2").hide();
     };
+
+    this.silencePlease = function(){
+        this.shutUp();
+        this.silent = true;
+    };
+    this.showUsYourFemaleSelf = function(){
+        this.silent = false;
+    };
+
     (function($){
         $.fn.hasScrollBar = function(){
             var e = this.get(0);

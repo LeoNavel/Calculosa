@@ -58,29 +58,23 @@
     top: 216px;
     padding: 10px;
     min-width: 100px;
-    /*!*opacity: 1;*!*/
-    /*margin: 0;*/
-    /*!*border-width: 1px;*!*/
-    /*!*overflow: hidden;*!*/
-    font-size: 26px;
-    font-style: normal;
-    text-align: center;
+    max-width: 300px;
+    max-height: 200px;
 
 }
 
-#bublina{
-    max-width: 300px;
-    max-height: 200px;
+#bublina, #help{
+    font-size: 26px;
+    font-style: normal;
     text-align: center;
+    color: #515151;
     background-color: rgba(247, 247, 247, 1);
-    border: 8px solid #515151;
+    border: 4px solid #515151;
     -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
     border-radius: 30px;
     -webkit-box-shadow: 2px 2px 4px #444444;
-    -moz-box-shadow: 2px 2px 4px #444444;
     box-shadow: 2px 2px 4px #444444;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 #bublina1{
@@ -88,9 +82,9 @@
     position: absolute;
     width: 0;
     height: 0;
-    left: 30px;
-    top: 84px;
-    border: 25px solid;
+    left: 674px;
+    top: 326px;
+    border: 12px solid;
     border-color: #515151 transparent transparent #515151;
 }
 
@@ -99,8 +93,8 @@
     position: absolute;
     width: 0;
     height: 0;
-    left: 38px;
-    top: 84px;
-    border: 15px solid;
+    left: 678px;
+    top: 326px;
+    border: 7px solid;
     border-color: rgba(247, 247, 247, 1) transparent transparent rgba(247, 247, 247, 1);
 }

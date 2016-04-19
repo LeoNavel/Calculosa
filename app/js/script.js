@@ -6,7 +6,7 @@
  * @author Filip Leo Klembara
  * @date 15.4.2016
  */
-var style = 0;
+
 var Mathlib = require("../js/Mathlib/Mathlib");
 
 var Calculosa = new calculosa;
@@ -168,7 +168,7 @@ function solveBin(){
         var solution = func(a, b);
         if(!isNaN(solution)){
             solution = Mathlib.round(solution * 100000000) / 100000000;
-            Calculosa.setSentence(a + "" + op + "" + b + "=" + solution);
+            Calculosa.setSentence(a + "" + op + "" + b + " = " + solution);
             screen.outputStr = solution;
 
         }else{
@@ -413,20 +413,5 @@ function floatingPoint(){
         screen.outputStr = "0.";    //if screen#output is empty add 0. to it
 }
 
-function changeStyle(){
-    if(style==1){
-        $(".btn").css("background-color", "#B2E5F0");
-        $("#screen").css("background-color", "#B2E5F0");
-        $("img").css("color", "#B2E5F0");
-        $("body").css("background-image", "url(../images/background.png");
-        style = 0;
-    }else{
-        $(".btn").css("background-color", "");
-        $("#screen").css("background-color", "");
-        $("img").css("color", "");
-        $("body").css("background-image", "");
-        style = 1;
-    }
-}
 
 /*** End of file script.js ***/

@@ -2,8 +2,8 @@ body * {
     position: absolute;
     display: block;
     box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -webkit-transition: all 1s;
+    /*-webkit-box-sizing: border-box;*/
+    /*-webkit-transition: all 1s;*/
 }
 body{
     background-color: rgba(37, 40, 69, 1);
@@ -58,3 +58,10 @@ body{
     margin:0;
 }
 
+#help{
+    opacity: 0;
+    top: 20px;
+    left: 20px;
+    width: 600px;
+    height: 730px;
+}
