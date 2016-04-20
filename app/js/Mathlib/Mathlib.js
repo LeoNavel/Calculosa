@@ -100,7 +100,7 @@ continuedFraction = function(x, n){
  */
 exports.power = function(a, b){
     var i = 1, c = 1, sign = b;
-    var nasobky = [], mocniny = [];
+    var muls = [], pows = [];
     if(a == 0){
         return 0;
     }
@@ -125,20 +125,20 @@ exports.power = function(a, b){
         return c;
     }
 
-    nasobky[0] = 1;
-    mocniny[0] = a;
+    muls[0] = 1;
+    pows[0] = a;
 
-    while(nasobky[i - 1]<b){
-        nasobky[i] = nasobky[i - 1] * a;
-        mocniny[i] = mocniny[i - 1] * mocniny[i - 1];
+    while(muls[i - 1]<b){
+        muls[i] = muls[i - 1] * a;
+        pows[i] = pows[i - 1] * pows[i - 1];
         i++;
     }
 
     i--;
     while(i>=0){
-        if(b - nasobky[i]>=0){
-            b = b - nasobky[i];
-            c *= mocniny[i];
+        if(b - muls[i]>=0){
+            b = b - muls[i];
+            c *= pows[i];
         }
         i--;
     }
