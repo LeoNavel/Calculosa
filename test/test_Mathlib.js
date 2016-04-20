@@ -159,6 +159,9 @@ describe('Mathlib', function () {
         it('should return 256 for 2 power to 8', function () {
             Mathlib.power(2, 8).should.equal(256);
         });
+        it('should return 64 for 8 power to 2', function () {
+            Mathlib.power(8, 2).should.equal(64);
+        });
         it('should return 0.25 for 0.5 power to 2', function () {
             Mathlib.power(0.5, 2).should.equal(0.25);
         });

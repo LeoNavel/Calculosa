@@ -113,8 +113,7 @@ exports.power = function(a, b){
     if(a==0){
         return a;
     }
-
-    if(a>0 && a<1 || a<0 && a> -1){
+    /*if(a>0 && a<1 || a<0 && a> -1){
         while(i<=b){
             c = c * a;
             i++;
@@ -123,13 +122,12 @@ exports.power = function(a, b){
             c = 1 / c;
         }
         return c;
-    }
-
+    }*/
     muls[0] = 1;
     pows[0] = a;
 
     while(muls[i - 1]<b){
-        muls[i] = muls[i - 1] * a;
+        muls[i] = muls[i - 1] * 2;
         pows[i] = pows[i - 1] * pows[i - 1];
         i++;
     }
