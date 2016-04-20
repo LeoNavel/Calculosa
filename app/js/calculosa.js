@@ -12,7 +12,7 @@ function calculosa(){
         this.sentence = sentence;
         var pos = sentence.indexOf("=");
         if(pos> -1)
-            this.solution = sentence.substr(pos + 1);
+            this.solution = sentence.substr(pos + 2);
         this.somethingToSay = true;
     };
     this.setErr = function(a){
@@ -30,12 +30,15 @@ function calculosa(){
                     case "666":
                         this.sentence = "Hell! Ou!";
                         break;
+                    case "42":
+                        this.sentence = "You have just found answer to everything";
+                        break;
                 }
             }
             this.bubble(this.sentence, true);
             console.log(this.sentence);
         }else{
-            console.log("nothing to say");
+            console.log("Nothing to say");
         }
         this.resetVars();
     };
@@ -45,8 +48,23 @@ function calculosa(){
         this.solution = NaN;
         this.somethingToSay = false;
     };
+
+    this.closeHelp = function(){
+        this.showUsYourFemaleSelf();
+        $("#calcImg").animate({
+            right: "75px",
+            bottom: "100px"
+        }, 500);
+        $("#main").animate({
+            opacity: "1"
+        }, 1000);
+        $("#help").css("visibility", "hidden").animate({
+            opacity: "0"
+        }, 1000);
+        $(".blahblah").unbind("click");
+    };
+
     this.help = function(){
-        // alert("Hey...\nyo...\naj hrd yo nid maj helf...\nwell...\nfok you...");
         this.silencePlease();
         $("#calcImg").animate({
             right: "0px",
@@ -55,15 +73,18 @@ function calculosa(){
         $("#main").animate({
             opacity: "0.3"
         }, 1000);
-        // $("#calcImg").css("right", "0");
-        // $("#calcImg").css("bottom", "0");
-        // $("#main").css("opacity","0.3");
-        $("body").append("<div id='help'></div>");
-        $("#help").animate({
+        $("#help").css("visibility", "visible").animate({
             opacity: "1"
         }, 1000);
-
-
+        $(".blahblah:not(oneLine)").bind("click", function(){
+            var a = $(this).next();
+            a.toggle('slow');
+            var b = $(this).hasClass("active");
+            if(b)
+                $(this).removeClass("active");
+            else
+                $(this).addClass("active");
+        })
     };
 
     this.errMsg = function(){

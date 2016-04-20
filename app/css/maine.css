@@ -13,11 +13,14 @@ body{
 
 
 .btn{
-    margin-left: 43px;
-    position: relative;
     width: 50px;
     height: 50px;
     padding: 24px 0;
+    margin-left: 43px;
+}
+
+.btn, .shortCut{
+    position: relative;
     border: 1px solid #CCCCCC;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -59,9 +62,134 @@ body{
 }
 
 #help{
+    position: absolute;
+    visibility: hidden;
     opacity: 0;
-    top: 20px;
+    bottom: 20px;
     left: 20px;
     width: 600px;
     height: 730px;
+    display: block;
+    overflow-x: hidden;
+
+
+}
+
+#closeHelp{
+    position: absolute;
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #515151;
+    border-radius: 50px;
+    top: 2px;
+    left: 540px;
+    color: rgba(247, 247, 247, 1);
+    background-color: #515151;
+}
+
+#closeHelp:hover{
+    cursor: pointer;
+}
+
+#help h1{
+    position: relative;
+}
+
+#help h2{
+    /*position: relative;*/
+    position: relative;
+    /*margin-top: 30px;*/
+}
+
+#help ul{
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    position: relative;
+}
+
+#help ul li{
+    display: block;
+    /*display: ;*/
+    padding: 10px;
+    margin-top: 15px;
+    position: relative;
+}
+
+#help img{
+    border: 1px solid #515151;
+    position: relative;
+    float: left;
+    height: 36px;
+    width: 36px;
+}
+
+#help div{
+    position: relative;
+
+}
+
+#help p{
+    display: block;
+    max-width: 70%;
+    margin-left: 70px;
+}
+
+.shortCut{
+    /*margin-right: 20px;*/
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: -10px;
+    /*float: left;*/
+    display: inline-block;
+    height: 36px;
+    text-align: center;
+    padding: 15px 0 19px 0;
+    width: 36px;
+}
+
+#calc{
+    width: 400px;
+    height: 800px;
+    top: 0;
+    left: 0;
+
+}
+
+.blahblah{
+    /*margin-top: 20px;*/
+    /*display: inline-block;*/
+    /*font-size: 1.1em;*/
+    /*text-align: center;*/
+}
+
+.blahblah:not(.active):not(.oneLine):after{
+    content: 'more';
+    margin-left: 10px;
+    color: #2A6496;
+    font-size: 0.5em;
+}
+
+.blahblah:not(.oneLine).active:after{
+    content: "less";
+    margin-left: 10px;
+    color: #2A6496;
+    font-size: 0.5em;
+}
+
+.blahblahblah{
+    margin-top: 20px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.popUp{
+    text-align: center;
+    display: none;
+}
+
+.btnName{
+    display: inline-block;
+    margin-left: 10px;
 }
