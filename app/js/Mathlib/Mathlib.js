@@ -78,15 +78,15 @@ continuedFraction = function(x, n){
     if(x<0 || n<=0)
         return NaN;
     if(x>0){
-        x = (x - 1) / (x + 1);    //upravenie
-        n--;        //dekrementovanie kvoli tomu ze prva iteracia je v return
-        var menovatel = (n==0) ? 1 : 2 * n;    //nastavenie najspodnejsieho menovatela
+        x = (x - 1) / (x + 1);
+        n--;
+        var frac = (n==0) ? 1 : 2 * n;
         while(n>0){
-            menovatel = 2.0 * n - 1 - (x * x * n * n / menovatel);  //nastavenie noveho menovatela
-            n--;        //dekrementovanie /(n)
+            frac = 2.0 * n - 1 - (x * x * n * n / frac);
+            n--;
         }
 
-        return 2 * x / menovatel;       //vrati vysledok pre dany pocet operacii
+        return 2 * x / frac;
     }
 };
 
@@ -101,6 +101,12 @@ continuedFraction = function(x, n){
 exports.power = function(a, b){
     var i = 1, c = 1, sign = b;
     var nasobky = [], mocniny = [];
+    if(a == 0){
+        return 0;
+    }
+    if(b%1 > 0){
+        return NaN;
+    }
     if(b<0){
         b = b * -1;
     }

@@ -166,7 +166,7 @@ describe('Mathlib', function () {
             Mathlib.power(2, -4).should.equal(0.0625);
         });
         it('should return NaN for 2 power to 0.3', function(){
-            Mathlib.power(2, 0.3).should.equal(NaN);
+            Mathlib.power(2, 0.3).should.be.NaN();
         });
     });
     /**
