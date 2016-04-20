@@ -165,6 +165,9 @@ describe('Mathlib', function () {
         it('should return 0.0625 for 2 power to -4', function () {
             Mathlib.power(2, -4).should.equal(0.0625);
         });
+        it('should return NaN for 2 power to 0.3', function(){
+            Mathlib.power(2, 0.3).should.equal(NaN);
+        });
     });
     /**
      * Tests for division method of Mathlib.
