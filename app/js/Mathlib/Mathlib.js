@@ -175,6 +175,9 @@ exports.factorial = (function(){
             if(n<0){
                 return NaN;
             }
+            if(n>60 && n%1 == 0){
+                return Infinity;
+            }
             if(n===0){
                 return 1;
             }else if(cache[n]){
