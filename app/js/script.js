@@ -71,10 +71,6 @@ $(function(){
         if(Calculosa.somethingToSay)
             Calculosa.say();
     });
-
-
-    $("#btnHelp").click();
-    $("#help").find(".blahblah")[0].click();
 });
 
 /**
@@ -175,7 +171,10 @@ function solveBin(){
             screen.outputStr = solution;
 
         }else{
-            Calculosa.setErr("Division by zero");
+            if(screen.operationStr=="/")
+                Calculosa.setErr("Division by zero");
+            else
+                Calculosa.setErr("Wrong input");
             clear();
         }
     }
