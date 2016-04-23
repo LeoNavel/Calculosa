@@ -88,11 +88,12 @@ function calculosa(){
     };
 
     this.errMsg = function(){
-        this.bubble(this.err, false)
+        this.bubble(this.err, false);
+        console.log("ERROR: " + this.err);
     };
 
     this.bubble = function(str, ok){
-        str = str || this.sentence;
+
         var bublina = $("#bublina"), bublina1 = $("#bublina1"), bublina2 = $("#bublina2");
         if(ok){
             bublina.css("border-color", "#515151");
@@ -107,8 +108,8 @@ function calculosa(){
         bublina2.hide();
         bublina.hide();
         if(scrollBar.vertical || scrollBar.horizontal){
-            this.sentence = "I'm too lazy to say it...";
-            bublina.html(this.sentence);
+            str = "I'm too lazy to say it...";
+            bublina.html(str);
         }
 
         var height = bublina.outerHeight(),

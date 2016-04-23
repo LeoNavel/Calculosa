@@ -65,10 +65,10 @@ body{
     position: absolute;
     visibility: hidden;
     opacity: 0;
-    bottom: 20px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
     width: 600px;
-    height: 730px;
+    max-height: 730px;
     display: block;
     overflow-x: hidden;
 

@@ -29,6 +29,10 @@ $(function(){
     $("#closeHelp").click(function(){
         Calculosa.closeHelp();
     });
+    $("#calcImg").click(function(){
+        Calculosa.setSentence("You are bored...<br>aren't you?");
+        Calculosa.say();
+    });
     $(".btn").click(function(){
         if($(this).attr("id")=="btnHelp"){
             Calculosa.help();
@@ -166,6 +170,7 @@ function solveBin(){
     if(func){
         var solution = func(a, b);
         if(!isNaN(solution)){
+            console.log(solution);
             solution = Mathlib.round(solution * 100000000) / 100000000;
             Calculosa.setSentence(a + "" + op + "" + b + " = " + solution);
             screen.outputStr = solution;
@@ -204,6 +209,7 @@ function solveUn(){
     if(func){
         var solution = func(a);
         if(!isNaN(solution)){
+            console.log(solution);
             solution = Mathlib.round(solution * 100000000) / 100000000;
             var ret = (op=="ln") ? op + "(" + a + ")" : a + "" + op;
             Calculosa.setSentence(ret + "=" + solution);
