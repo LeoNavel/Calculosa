@@ -2,53 +2,52 @@
 
 /**
  * @file Mathlib.js
- *
- * @brief Mathlib class, requires numbers in float for methods except factorial
+ * @desc Mathlib class, requires numbers in float for methods except factorial
  * @author Michal
  */
 
-/** @brief Addition
- *
- *  Adds b to a
- *
- *    @param [in] a number
- *    @param [in] b number
- *    @return adition of a+b
+/**
+ * @class Mathlib
+ */
+
+/**
+ * Addition
+ * @desc Adds b to a
+ * @param a {float} - number
+ * @param b {float} - number
+ * @return {number} adition of a+b
  */
 exports.addition = function(a, b){
     return a + b;
 };
 
-/** @brief Subtraction
- *
- *  Subtracts b from a
- *
- *    @param [in] a number
- *    @param [in] b number
- *    @return subtraction of a-b
+/**
+ * Subtraction
+ * @desc Subtracts b from a
+ * @param a {float} - number
+ * @param b {float} - number
+ * @return {number} subtraction of a-b
  */
 exports.subtraction = function(a, b){
     return a - b;
 };
 
-/** @brief Multiplication
- *
- *  Multiply a and b
- *
- *    @param [in] a number
- *    @param [in] b number
- *    @return multiplication of a*b
+/**
+ * Multiplication
+ * @desc Multiply a and b
+ * @param a {float} - number
+ * @param b {float} - number
+ * @return {number} multiplication of a*b
  */
 exports.multiplication = function(a, b){
     return a * b;
 };
 
-/** @brief Logarithm
- *
- *  Calculate logarithm from a to 0.00000001 aproximation
- *
- *    @param [in] a number
- *    @return logarithm of a
+/**
+ * Logarithm
+ * @desc Calculate logarithm from a to 0.00000001 aproximation
+ * @param x {float} - number
+ * @return {number} logarithm of x
  */
 exports.logarithm = function(x){
     var n = 1, eps = 1, log1, log;
@@ -66,13 +65,12 @@ exports.logarithm = function(x){
     return continuedFraction(x, n);
 };
 
-/** @brief Continued Fraction
- *
- *  Calculates logarithm for n iterations from continued fractions
- *
- *  @param [in] n number
- *    @param [in] a number
- *    @return logarithm of a
+/**
+ * Continued Fraction
+ * @desc Calculates logarithm for n iterations from continued fractions
+ * @param x {float} - number
+ * @param n {float} - number
+ * @return {number} logarithm of x
  */
 continuedFraction = function(x, n){
     if(x<0 || n<=0)
@@ -90,21 +88,20 @@ continuedFraction = function(x, n){
     }
 };
 
-/** @brief Power
- *
- *  Empower a to b
- *
- *    @param [in] a number
- *    @param [in] b number
- *    @return b-th power of a
+/**
+ * Power
+ * @desc Empower a to b
+ * @param a {float} - number
+ * @param b {int} - number
+ * @return {number} b-th power of a
  */
 exports.power = function(a, b){
     var i = 1, c = 1, sign = b;
     var muls = [], pows = [];
-    if(a == 0){
+    if(a==0){
         return 0;
     }
-    if(b%1 > 0){
+    if(b % 1>0){
         return NaN;
     }
     if(b<0){
@@ -113,16 +110,6 @@ exports.power = function(a, b){
     if(a==0){
         return a;
     }
-    /*if(a>0 && a<1 || a<0 && a> -1){
-        while(i<=b){
-            c = c * a;
-            i++;
-        }
-        if(sign<0){
-            c = 1 / c;
-        }
-        return c;
-    }*/
     muls[0] = 1;
     pows[0] = a;
 
@@ -147,13 +134,12 @@ exports.power = function(a, b){
     return c;
 };
 
-/** @brief Division
- *
- *  A divided by b
- *
- *    @param [in] a number
- *    @param [in] b number
- *    @return division of a by b
+/**
+ * Division
+ * @desc A divided by b
+ * @param a {float} - number
+ * @param b {float} - number
+ * @return {number} division of a by b
  */
 exports.division = function(a, b){
     var c;
@@ -165,21 +151,19 @@ exports.division = function(a, b){
     return c;
 };
 
-/** @brief Factorial
- *
- *  Calculate factorial
- *
- *    @param [in] a number
- *    @return factorial of a
+/**
+ * Factorial
+ * @desc Calculate factorial
+ * @param n {float} - number
+ * @return {number} factorial of a
  */
-
 exports.factorial = (function(){
     var cache = {},
         fn = function(n){
             if(n<0){
                 return NaN;
             }
-            if(n>60 && n%1 == 0){
+            if(n>60 && n % 1==0){
                 return Infinity;
             }
             if(n===0){
@@ -192,12 +176,11 @@ exports.factorial = (function(){
     return fn;
 }());
 
-/** @brief Round
- *
- *  Rounds given number
- *
- *    @param [in] x number
- *    @return rounded number
+/**
+ * Round
+ * @desc Rounds given number
+ * @param x {float} - number
+ * @return {number} rounded number
  */
 exports.round = function(x){
     var num = 1, sign = 1;
@@ -223,8 +206,8 @@ exports.round = function(x){
         }
     }
     if(sign<0){
-        x = x* -1;
+        x = x * -1;
     }
     return x;
-}
+};
 /*** End of file Mathlib.js ***/

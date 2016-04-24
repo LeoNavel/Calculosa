@@ -1,27 +1,51 @@
 /**Math library for our calculator**/
 /**
  * @file script.js
- *
- * @brief state machine with function for calculator
+ * @desc state machine with function for calculator
  * @author Filip Leo Klembara
- * @date 15.4.2016
+ * @author Lucia Ter Tušimová
  */
 
+/**
+ * Mathlib library
+ * @var {class} Mathlib
+ */
 var Mathlib = require("../js/Mathlib/Mathlib");
 
+/**
+ * Our little Calculosa :3
+ * @var {class} Calculosa
+ */
 var Calculosa = new calculosa;
-///Our little Calculosa :3
-
-var olejvan = {state: 1, vars: {a: "", b: "", operation: ""}};
-/// state and global vars
-
-var screen = {operation: "", output: "", operationStr: "", outputStr: "", newNumber: true};
-///everything with screen
 
 /**
- * @brief handle click events
- *
- * @return There is no return from this hell
+ * All states and vars
+ * @var {object} olejvan
+ * @prop {object} olejvan - all in one
+ * @prop {int} olejvan.state - state of state mashine
+ * @prop {object} olejvan.vars - keep all global vars
+ * @prop {float|int} olejvan.vars.a - first number in calculations
+ * @prop {float|int} olejvan.vars.b - second number in calculations
+ * @prop {string} olejvan.vars.operation - operation
+ */
+var olejvan = {state: 1, vars: {a: "", b: "", operation: ""}};
+
+/**
+ * Everything with screen's data
+ * @var {object} screen
+ * @prop {object} screen
+ * @prop {object} screen.operation - element with operation
+ * @prop {object} screen.output - element for output strings
+ * @prop {string} screen.operationStr - operation string
+ * @prop {string} screen.outputStr - output string
+ * @prop {bool} screen.newNumber - boolean value if the number on the screen is new or not
+ */
+var screen = {operation: "", output: "", operationStr: "", outputStr: "", newNumber: true};
+
+/**
+ * handle click events
+ * @event #click
+ * @returns There is no return from this hell
  */
 $(function(){
     Calculosa.setSentence("Hello!<br>I am Calculosa!");
@@ -78,10 +102,7 @@ $(function(){
 });
 
 /**
- * @brief solve for binary operand
- *
- * checking state and solve
- *
+ * Solve for binary operand, check state and solve
  */
 function doBinOperand(){
     var ids = $(this).attr("id");   //get id
@@ -107,10 +128,7 @@ function doBinOperand(){
 }
 
 /**
- * @brief solve for unary operands
- *
- * checking state and solve
- *
+ * Solve for unary operands, checking state and solve
  */
 function doUnOperand(){
     var ids = $(this).attr("id");
@@ -137,10 +155,8 @@ function doUnOperand(){
     }
 }
 
-/** @brief solve binary operand
- *
- * detect which function should by called and call it
- *
+/**
+ * Solve binary operand, detect which function should by called and call it
  */
 function solveBin(){
     olejvan.vars.b = screen.outputStr;
@@ -171,7 +187,8 @@ function solveBin(){
         var solution = func(a, b);
         if(!isNaN(solution)){
             console.log(solution);
-            solution = Mathlib.round(solution * 100000000) / 100000000;
+            if(solution>Mathlib.power(10, -8))
+                solution = Mathlib.round(solution * 100000000) / 100000000;
             Calculosa.setSentence(a + "" + op + "" + b + " = " + solution);
             screen.outputStr = solution;
 
@@ -186,11 +203,7 @@ function solveBin(){
 }
 
 /**
- *
- * @brief solve unary
- *
- * decide which function should be used and call it
- *
+ * Solve unary, decide which function should be used and call it
  */
 function solveUn(){
     olejvan.vars.a = screen.outputStr;
@@ -210,7 +223,8 @@ function solveUn(){
         var solution = func(a);
         if(!isNaN(solution)){
             console.log(solution);
-            solution = Mathlib.round(solution * 100000000) / 100000000;
+            if(solution>Mathlib.power(10, -8))
+                solution = Mathlib.round(solution * 100000000) / 100000000;
             var ret = (op=="ln") ? op + "(" + a + ")" : a + "" + op;
             Calculosa.setSentence(ret + "=" + solution);
             screen.outputStr = solution;
@@ -222,11 +236,7 @@ function solveUn(){
 }
 
 /**
- *
- * @brief reload screen data
- *
- * reloads data from screen
- *
+ * Reloads data from screen
  */
 function reloadScreenData(){
     screen.operation = $("#operation");
@@ -236,11 +246,7 @@ function reloadScreenData(){
 }
 
 /**
- *
- * @brief sets screen data
- *
- * sets data on screen
- *
+ * Sets screen data
  */
 function setScreenData(){
     screen.operation.text(screen.operationStr);
@@ -248,13 +254,8 @@ function setScreenData(){
 }
 
 /**
- *
- * @brief change state
- *
  * change current state
- *
- * @param state next state
- *
+ * @param state {int} - state next state
  */
 function changeStateTo(state){
     switch(state){
@@ -281,13 +282,8 @@ function changeStateTo(state){
 }
 
 /**
- *
- * @brief solve
- *
  * try to solve everything
- *
- * @param bin if true, solve for binary; if not, solve for unary
- *
+ * @param bin {bool} - if true, solve for binary; if not, solve for unary operand
  */
 function solve(bin){
     var e = false;
@@ -317,6 +313,9 @@ function solve(bin){
 
 }
 
+/**
+ * Clear everything and set current state to 1
+ */
 function clear(){
     olejvan.state = 1;
     olejvan.vars.a = "";
@@ -327,12 +326,9 @@ function clear(){
     setScreenData();
     Calculosa.shutUp();
 }
+
 /**
- *
- * @brief clear
- *
- * clear everything and set current state to 1
- *
+ * call clear() and set Calculosa's sentence to "Clear!"
  */
 function clearAll(){
     clear();
@@ -340,7 +336,7 @@ function clearAll(){
 }
 
 /**
- * @brief delete last number from screen
+ * Delete last number from screen
  */
 function deleteLastNumber(){
     var str = screen.outputStr;
@@ -353,7 +349,7 @@ function deleteLastNumber(){
 }
 
 /**
- * @brief change sign
+ * Change sign
  */
 function changeSign(){
     var str = screen.outputStr;
@@ -369,15 +365,14 @@ function changeSign(){
 }
 
 /**
- * @brief add number to screen
- *
- * add number if the number is "new" then clear screen and insted of add make the number first
- *
- * @param element element of the clicked button
+ * Add number if the number is "new" then clear screen and instead of add make the number first
+ * @param element {object} - element of the clicked button
  */
 function addNumber(element){
-    /// maximal length of string on screen
-    var maxLen = 30;
+    /**
+     * @const maxLen {number} - max length od screen
+     */
+    const maxLen = 30;
     if(olejvan.state==3){
         changeStateTo(1);
     }
@@ -395,9 +390,7 @@ function addNumber(element){
 }
 
 /**
- * @brief add flating point
- *
- * if last char on the screen is point then removes it
+ * Add floating point, if last char on the screen is point then removes it,
  * if on the screen is point and it is not last char do nothing
  */
 function floatingPoint(){

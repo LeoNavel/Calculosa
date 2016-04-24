@@ -1,13 +1,39 @@
 /**
  * Created by Navel on 14.04.16.
+ * @author Filip Leo Klembara
+ * @file calculosa.js
+ * @desc All behavior of our little Calculosa :3
+ */
+
+/**
+ * @class Calculosa
  */
 function calculosa(){
+    /**
+     * @var {string} sentence - message
+     */
     this.sentence = "";
+    /**
+     * @var {string} err - error message
+     */
     this.err = "";
+    /**
+     * @var {string} solution - solution
+     */
     this.solution = NaN;
+    /**
+     * @var {bool} somethingToSay - boolean value for checking if Calclulosa have something wise to say
+     */
     this.somethingToSay = false;
+    /**
+     * @var {bool} silent - check if Calculosa should be silent or not
+     */
     this.silent = false;
 
+    /**
+     * set sentence and solution
+     * @param sentence {string} - sentence to say
+     */
     this.setSentence = function(sentence){
         this.sentence = sentence;
         var pos = sentence.indexOf("=");
@@ -15,10 +41,18 @@ function calculosa(){
             this.solution = sentence.substr(pos + 2);
         this.somethingToSay = true;
     };
+
+    /**
+     * set error message
+     */
     this.setErr = function(a){
         this.err = a;
         this.somethingToSay = true;
     };
+
+    /**
+     * makes Calculosa say something
+     */
     this.say = function(){
         if(this.silent)
             return;
@@ -42,6 +76,10 @@ function calculosa(){
         }
         this.resetVars();
     };
+
+    /**
+     * resets vars sentence, err, solution and somethingToSay
+     */
     this.resetVars = function(){
         this.sentence = "";
         this.err = "";
@@ -49,6 +87,9 @@ function calculosa(){
         this.somethingToSay = false;
     };
 
+    /**
+     * close help window
+     */
     this.closeHelp = function(){
         this.showUsYourFemaleSelf();
         $("#calcImg").animate({
@@ -64,6 +105,9 @@ function calculosa(){
         $(".blahblah").unbind("click");
     };
 
+    /**
+     * open help window, and order Calculosa to be quiet
+     */
     this.help = function(){
         this.silencePlease();
         $("#calcImg").animate({
@@ -87,13 +131,20 @@ function calculosa(){
         })
     };
 
+    /**
+     * show error message
+     */
     this.errMsg = function(){
         this.bubble(this.err, false);
         console.log("ERROR: " + this.err);
     };
 
+    /**
+     * create bubble and sets properties
+     * @param str {string} - message to fill bubble
+     * @param ok {bool} - true if str is not error message
+     */
     this.bubble = function(str, ok){
-
         var bublina = $("#bublina"), bublina1 = $("#bublina1"), bublina2 = $("#bublina2");
         if(ok){
             bublina.css("border-color", "#515151");
@@ -123,16 +174,26 @@ function calculosa(){
         bublina.fadeIn('slow');
     };
 
+    /**
+     * Shut up Calculosa...
+     */
     this.shutUp = function(){
         $("#bublina").hide();
         $("#bublina1").hide();
         $("#bublina2").hide();
     };
 
+    /**
+     * Makes Calculosa be quiet
+     */
     this.silencePlease = function(){
         this.shutUp();
         this.silent = true;
     };
+
+    /**
+     * Makes from Calculosa classic female... How? Well... She starts commenting everything...
+     */
     this.showUsYourFemaleSelf = function(){
         this.silent = false;
     };
