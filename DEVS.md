@@ -1,4 +1,9 @@
 # Developer's manual
+## NodeJS instalation
+```
+$ brew install nodejs nodejs-legacy npm # for Mac
+$ apt-get install nodejs npm # for Ubunut
+```
 ## Initialization
 _Note: NodeJS with npm required_
 ```
@@ -39,5 +44,11 @@ _Recommendation: Install first `bower` globally with `npm install -g bower bower
 $ bower install <package-name> --save
 $ bower-installer
 ```
+
+## Running Tests
+```
+$ make test
+```
+
 ## Cleaning
 Running `make clean` will remove all locale installed nodeJS modules, bower components, created packages and installer.
