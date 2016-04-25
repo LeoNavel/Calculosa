@@ -1,0 +1,5 @@
+xbohus01 5 mathlib.js, profiling, debugging, code review, uzivatelska dokumentacia
+xconka00 5 inicializacia elektronu, makefile, instalator, testy, code review
+xklemb00 5 code review, implementaciu, GUI, technicka dokumentacia
+xtusim00 5 tvorba grafickej identity, mockupy, GUI, code review, uzivatelska dokumentacia
+
