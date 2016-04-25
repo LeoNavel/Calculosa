@@ -5,4 +5,4 @@ package: ; npm run package
 clean: ; scripts/clean.sh
 test: ; scripts/runtests.sh
 doc: ; scripts/makedoc.sh
-pack: clean ; tar -cvzf Calculosa.git star.gz ../Calculosa
+pack: clean ; tar -cvzf Calculosa.tar.gz ../Calculosa
