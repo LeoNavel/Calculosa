@@ -1,3 +1,3 @@
 #!/bin/sh
 
-mocha test/test_Mathlib.js
+node_modules/.bin/mocha test/test_Mathlib.js
