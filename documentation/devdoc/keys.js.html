@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: keys.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: keys.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Created by Navel on 15.04.16.
+ */
+
+
+/**
+ * @file keys.js
+ * @desc handle pressed keys events
+ * @author Filip Leo Klembara
+ */
+
+$(function(){
+    /**
+     * @event #keypress
+     */
+    $(document).keypress(function(e){
+        var element = getKey(e);
+        if(element)
+            element.click();
+    })
+});
+
+/**
+ * @param e {object}
+ * @returns {*} if e is valid key then return element to click
+ */
+function getKey(e){
+    var element;
+    var c = String.fromCharCode(e.which);
+    var btnSolve = $("#btnSolve");
+    switch(e.which){
+        case 13:
+            element = btnSolve;
+            break;
+    }
+    switch(c){
+        case '+':
+            element = $("#btnAdd");
+            break;
+        case '-':
+            element = $("#btnSub");
+            break;
+        case '*':
+        case 'x':
+        case 'X':
+            element = $("#btnMul");
+            break;
+        case '/':
+            element = $("#btnDiv");
+            break;
+        case 'l':
+        case 'L':
+            element = $("#btnLog");
+            break;
+        case '^':
+            element = $("#btnPower");
+            break;
+        case '!':
+        case 'f':
+        case 'F':
+            element = $("#btnFuck");
+            break;
+        case '=':
+            element = btnSolve;
+            break;
+        case 'd':
+        case 'D':
+            element = $("#btnDel");
+            break;
+        case 'c':
+        case 'C':
+            element = $("#btnCA");
+            break;
+        case '.':
+        case ',':
+            element = $("#btnPoint");
+            break;
+        case 's':
+        case 'S':
+            element = $("#btnSign");
+            break;
+        case '1':
+            element = $("#btn1");
+            break;
+        case '2':
+            element = $("#btn2");
+            break;
+        case '3':
+            element = $("#btn3");
+            break;
+        case '4':
+            element = $("#btn4");
+            break;
+        case '5':
+            element = $("#btn5");
+            break;
+        case '6':
+            element = $("#btn6");
+            break;
+        case '7':
+            element = $("#btn7");
+            break;
+        case '8':
+            element = $("#btn8");
+            break;
+        case '9':
+            element = $("#btn9");
+            break;
+        case '0':
+            element = $("#btn0");
+            break;
+        case 'h':
+        case 'H':
+            element = $("#btnHelp");
+            break;
+    }
+    return element;
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="global.html#Calculosa">Calculosa</a></li><li><a href="global.html#Mathlib">Mathlib</a></li></ul><h3>Events</h3><ul><li><a href="global.html#event:#click">#click</a></li><li><a href="global.html#event:#keypress">#keypress</a></li></ul><h3>Global</h3><ul><li><a href="global.html#addition">addition</a></li><li><a href="global.html#addNumber">addNumber</a></li><li><a href="global.html#bubble">bubble</a></li><li><a href="global.html#changeSign">changeSign</a></li><li><a href="global.html#changeStateTo">changeStateTo</a></li><li><a href="global.html#clear">clear</a></li><li><a href="global.html#clearAll">clearAll</a></li><li><a href="global.html#closeHelp">closeHelp</a></li><li><a href="global.html#continuedFraction">continuedFraction</a></li><li><a href="global.html#deleteLastNumber">deleteLastNumber</a></li><li><a href="global.html#division">division</a></li><li><a href="global.html#doBinOperand">doBinOperand</a></li><li><a href="global.html#doUnOperand">doUnOperand</a></li><li><a href="global.html#err">err</a></li><li><a href="global.html#errMsg">errMsg</a></li><li><a href="global.html#factorial">factorial</a></li><li><a href="global.html#floatingPoint">floatingPoint</a></li><li><a href="global.html#getKey">getKey</a></li><li><a href="global.html#help">help</a></li><li><a href="global.html#logarithm">logarithm</a></li><li><a href="global.html#maxLen">maxLen</a></li><li><a href="global.html#multiplication">multiplication</a></li><li><a href="global.html#olejvan">olejvan</a></li><li><a href="global.html#power">power</a></li><li><a href="global.html#reloadScreenData">reloadScreenData</a></li><li><a href="global.html#resetVars">resetVars</a></li><li><a href="global.html#round">round</a></li><li><a href="global.html#say">say</a></li><li><a href="global.html#screen">screen</a></li><li><a href="global.html#sentence">sentence</a></li><li><a href="global.html#setErr">setErr</a></li><li><a href="global.html#setScreenData">setScreenData</a></li><li><a href="global.html#setSentence">setSentence</a></li><li><a href="global.html#showUsYourFemaleSelf">showUsYourFemaleSelf</a></li><li><a href="global.html#shutUp">shutUp</a></li><li><a href="global.html#silencePlease">silencePlease</a></li><li><a href="global.html#silent">silent</a></li><li><a href="global.html#solution">solution</a></li><li><a href="global.html#solve">solve</a></li><li><a href="global.html#solveBin">solveBin</a></li><li><a href="global.html#solveUn">solveUn</a></li><li><a href="global.html#somethingToSay">somethingToSay</a></li><li><a href="global.html#subtraction">subtraction</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Mon Apr 25 2016 21:53:15 GMT+0200 (CEST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
