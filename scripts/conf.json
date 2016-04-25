@@ -1,0 +1,34 @@
+{
+  "opts": {
+    "encoding": "utf8",
+    "destination": "../documentation/devdoc",
+    "readme": "home.md",
+    "recurse": true
+  },
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": [
+      "jsdoc",
+      "closure"
+    ]
+  },
+  "source": {
+    "include": [
+      "../app/js/"
+    ],
+    "exclude": [
+      "../app/js/Mathlib/MathlibDebugger.js",
+      "../app/js/jquery/",
+      "../app/js/main.js",
+      "../app/js/win31_squirrel.js"
+    ],
+    "includePattern": ".+\\.js(doc)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": [],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": false
+  }
+}
+

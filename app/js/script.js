@@ -4,6 +4,7 @@
  * @desc state machine with function for calculator
  * @author Filip Leo Klembara
  * @author Lucia Ter Tušimová
+ * @author Michal Bohuš
  */
 
 /**
