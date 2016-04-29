@@ -1,0 +1,12 @@
+Komunikácia:
+	Na komunikáciu sme používali Slack čo prinášalo veľké výhody (zobrazovali sme všetky zmeny v Gite, Trelle a hodnotení okamžite). No nie každý si otváral Slack pravidelne čo viedlo k dlhším odozvám.
+
+Termíny:
+	Zo začiatku sa všetky termíny plnili predčasne vďaka motivácii členov lenže ako čas plynul a prichádzali ďalšie projekty tak pochopiteľne sa úsilie muselo rozdeliť medzi viac projektov a teda sa termíny presúvali. Pôvodné termíny neboli dodržané ale termíny stanovené podľa aktuálnych podmienok sa dodržiavali. V budúcnosti by sa tomu mohlo dať vyhnúť skorším uvedomením si kedy bude aké zaťaženie od iných projektov čo by mohlo viesť k lepšiemu naplánovaniu termínov.
+
+Nástroje:
+	Zo začiatku sme sa nezamysleli nad možnosťou tvorby programovej dokumentácie čo nám neskôr spôsobilo nepríjemnosti keďže doxygen by mal fungovať aj na JavaScript ale ukázalo sa, že donútiť doxygen prijať JavaScript nie je také jednoduché. Po uvedomení si neochoty spolupracovať doxygenu s nami sme sa rozhodli pre JSDoc, ktorý bol dostačujúcim riešením. V ďalších projektoch je určite viac než vhodné prebrať aj možnosť dokumentácie kódu.
+
+Vedúci:
+	Pri výbere designu kalkulačky som sa ako vedúci odmietol zapojiť do hlasovania čo sa týmu nepáčilo. Tento postoj som zaujal aby som mohol vybrať návrh ktorý bude najlepší z najlepších. Ak by som hlasoval ako ostatný riskoval by som rovnaký počet hlasov na viacerých návrhoch čo by znamenalo ďaľšie hlasovanie a tým by sa strácal čas. Za toto rozhodnutie som bol ohodnotený negatívnym hodnotením a teda v budúcnosti by som mal popracovať nad princípom ako viesť tým.
+
