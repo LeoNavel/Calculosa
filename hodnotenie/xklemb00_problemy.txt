@@ -1,5 +1,5 @@
 Komunikácia:
-	Na komunikáciu sme používali Slack čo prinášalo veľké výhody (zobrazovali sme všetky zmeny v Gite, Trelle a hodnotení okamžite). No nie každý si otváral Slack pravidelne čo viedlo k dlhším odozvám.
+	Na komunikáciu sme používali Slack čo prinášalo veľké výhody (zobrazovali sa všetky zmeny v Gite, Trelle a hodnotení okamžite). No nie každý si otváral Slack pravidelne čo viedlo k dlhším odozvám.
 
 Termíny:
 	Zo začiatku sa všetky termíny plnili predčasne vďaka motivácii členov lenže ako čas plynul a prichádzali ďalšie projekty tak pochopiteľne sa úsilie muselo rozdeliť medzi viac projektov a teda sa termíny presúvali. Pôvodné termíny neboli dodržané ale termíny stanovené podľa aktuálnych podmienok sa dodržiavali. V budúcnosti by sa tomu mohlo dať vyhnúť skorším uvedomením si kedy bude aké zaťaženie od iných projektov čo by mohlo viesť k lepšiemu naplánovaniu termínov.
